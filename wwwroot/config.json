@@ -1,6 +1,6 @@
 {
     "initializationUrls": [
-        "catalogo-datos-estadisticos", "referencias-cartograficas"
+        "catalogo-datos-estadisticos", "referencias-cartograficas", "erupcion-volcanica-la-palma"
     ],
     "parameters": {
         "proxyableDomainsUrl": "",
