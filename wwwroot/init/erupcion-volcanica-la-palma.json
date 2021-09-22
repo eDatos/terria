@@ -1,0 +1,37 @@
+{
+	"homeCamera": {
+		"north": 30,
+		"east": -13,
+		"south": 27,
+		"west": -19
+	},
+	"baseMapName": "Erupción Volcánica La Palma 2021",
+	"viewerMode": "2d",
+	"catalog": [{
+		"name": "Erupción Volcánica La Palma 2021",
+		"description": "Erupción Volcánica La Palma 2021",
+		"type": "group",
+		"preserveOrder": true,
+		"isOpen": true,
+		"items": [{
+				"layers": "mapastematicos:EMSR546_AOI01_GRA_PRODUCT_observedEventA_r1_v1",
+				"url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+				"type": "wms",
+				"name": "Colada magmática",
+				"format": "image/png",
+				"isLegendVisible": true,
+				"styles": "line"
+			},
+			{
+				"layers": "mapastematicos:EMSR546_AOI01_GRA_PRODUCT_builtUpP_r1_v1",
+				"url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+				"type": "wms",
+				"name": "Viviendas afectadas por la colada",
+				"format": "image/png",
+				"isLegendVisible": true,
+				"styles": "line"
+			}
+		]
+
+	}]
+}
