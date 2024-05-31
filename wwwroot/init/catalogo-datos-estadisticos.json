@@ -21,7 +21,7 @@
                   "name": "Indicadores demográficos. Municipios después de 2007",
                   "description": "Indicadores demográficos. Municipios después de 2007",
                   "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "initialTimeSource": "start",
                   "columns": [
                     {
@@ -64,7 +64,7 @@
                   "name": "Indicadores demográficos. Municipios antes de 2007",
                   "description": "Indicadores demográficos. Municipios antes de 2007",
                   "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "initialTimeSource": "start",
                   "columns": [
                     {
@@ -119,7 +119,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2020",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2020",
                   "url": "data/csv/secciones-censales/20200101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -336,7 +336,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2019",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2019",
                   "url": "data/csv/secciones-censales/20190101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -553,7 +553,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2018",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2018",
                   "url": "data/csv/secciones-censales/20180101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -770,7 +770,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2017",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2017",
                   "url": "data/csv/secciones-censales/20170101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -987,7 +987,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2016",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2016",
                   "url": "data/csv/secciones-censales/20160101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -1204,7 +1204,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2015",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2015",
                   "url": "data/csv/secciones-censales/20150101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -1421,7 +1421,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2014",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2014",
                   "url": "data/csv/secciones-censales/20140101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -1638,7 +1638,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2013",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2013",
                   "url": "data/csv/secciones-censales/20130101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -1855,7 +1855,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2012",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2012",
                   "url": "data/csv/secciones-censales/20120101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -2072,7 +2072,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2011",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2011",
                   "url": "data/csv/secciones-censales/20110101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -2289,7 +2289,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2010",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2010",
                   "url": "data/csv/secciones-censales/20100101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -2506,7 +2506,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2009",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2009",
                   "url": "data/csv/secciones-censales/20090101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -2723,7 +2723,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2008",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2008",
                   "url": "data/csv/secciones-censales/20080101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -2940,7 +2940,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2007",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2007",
                   "url": "data/csv/secciones-censales/20070101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -3157,7 +3157,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2006",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2006",
                   "url": "data/csv/secciones-censales/20060101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -3374,7 +3374,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2005",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2005",
                   "url": "data/csv/secciones-censales/20050101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -3591,7 +3591,7 @@
                   "name": "Indicadores Demográficos. Secciones Censales. 2004",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2004",
                   "url": "data/csv/secciones-censales/20040101_indicadores_demograficos_pmh_distysecc.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -3820,7 +3820,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2020",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2020",
                   "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -4037,7 +4037,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2019",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2019",
                   "url": "data/csv/mallas/20190101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -4254,7 +4254,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2018",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2018",
                   "url": "data/csv/mallas/20180101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -4471,7 +4471,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2017",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2017",
                   "url": "data/csv/mallas/20170101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -4688,7 +4688,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2016",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2016",
                   "url": "data/csv/mallas/20160101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -4905,7 +4905,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2015",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2015",
                   "url": "data/csv/mallas/20150101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -5122,7 +5122,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2014",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2014",
                   "url": "data/csv/mallas/20140101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -5339,7 +5339,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2013",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2013",
                   "url": "data/csv/mallas/20130101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -5556,7 +5556,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2012",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2012",
                   "url": "data/csv/mallas/20120101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -5773,7 +5773,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2011",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2011",
                   "url": "data/csv/mallas/20110101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
@@ -5990,7 +5990,7 @@
                   "name": "Indicadores Demográficos. Malla  de 250m. 2010",
                   "description": "Índicadores Demográficos registrados a 1 de Enero de 2010",
                   "url": "data/csv/mallas/20100101_indicadores_demograficos_pmh.csv",
-                  "opacity": ".8",
+                  "opacity": 0.8,
                   "columns": [
                     {
                       "name": "geocode",
