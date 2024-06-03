@@ -1,0 +1,42 @@
+:global {
+  /* eDatos navbar adaptation */
+  #ui {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tjs-standard-user-interface__ui-root,
+  .tjs-standard-user-interface__uiInner,
+  .tjs-standard-user-interface__uiInner > div,
+  .tjs-standard-user-interface__uiInner > section {
+    height: 100%;
+  }
+
+  .tjs-standard-user-interface__ui-root,
+  .tjs-standard-user-interface__uiInner {
+    position: relative;
+  }
+
+  .tjs-standard-user-interface__story-wrapper {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    .tjs-mobile-header__ui {
+      position: absolute;
+    }
+
+    .tjs-mobile-modal-window__mobileModal {
+      z-index: 1;
+    }
+
+    .tjs-standard-user-interface__uiInner > div {
+      height: $mobile-header-height;
+    }
+
+    .tjs-standard-user-interface__uiInner > section {
+      height: calc(100% - $mobile-header-height);
+    }
+  }
+}
