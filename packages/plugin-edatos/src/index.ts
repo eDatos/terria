@@ -43,6 +43,7 @@ const plugin: TerriaPlugin = {
 
                     // See lib\Views\render.jsx
                     document.getElementById("ui").prepend(header); 
+                    reinsertScripts(document.getElementById('istac-navbar-container'));
 
                     // document.querySelector('#istac-app-header-content').innerHTML = `<div id="dropdown-language-container"></div>`;
                           
@@ -72,5 +73,19 @@ function generateElements(html: string, id: string) {
   return element;
 }
 
+
+function reinsertScripts(element: Element) {
+  const scriptList = element.getElementsByTagName('script');
+  for (const script of scriptList) {
+      const scriptCopy = document.createElement('script');
+      if (script.innerHTML) {
+          scriptCopy.innerHTML = script.innerHTML;
+      } else if (script.src) {
+          scriptCopy.src = script.src;
+      }
+      scriptCopy.async = false;
+      script.parentNode.replaceChild(scriptCopy, script);
+  }
+}
 
 export default plugin;
