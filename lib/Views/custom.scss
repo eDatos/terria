@@ -22,6 +22,11 @@
     flex: 1;
   }
 
+  .tjs-map-interaction-window__window {
+    position: absolute;
+    z-index: $notification-window-z-index;
+  }
+
   @media (max-width: 768px) {
     .tjs-mobile-header__ui {
       position: absolute;
