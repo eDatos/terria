@@ -5,14 +5,6 @@ import Variables from "../Styles/variables.scss";
 
 export default function renderUi(terria, allBaseMaps, viewState) {
   let render = () => {
-    const DropdownLanguage = require("./DropdownLanguage").default;
-    var dropdownContainer = document.getElementById(
-      "dropdown-language-container"
-    );
-    if (dropdownContainer) {
-      ReactDOM.render(<DropdownLanguage />, dropdownContainer);
-    }
-
     const UI = require("./UserInterface").default;
     ReactDOM.render(
       <UI
