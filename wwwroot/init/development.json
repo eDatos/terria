@@ -41,6 +41,20 @@
           }
         },
         {
+          "name": "Ejemplo de region mapping con MVT (subconjunto)",
+          "type": "csv",
+          "url": "data/csv/development/2000-2007_indicadores_demograficos_municipios_pmh_subconjunto.csv",
+          "description": "Ejemplo de region mapping con vector tiles, tal como se recomienda en v8 tras deprecar region mapping con WMS. Obtenidos desde https://datos.canarias.es/catalogos/estadisticas/dataset/fbb1af64-3138-4e85-9e14-cefd796b9461/resource/6b5e71f3-4bc9-4ed4-8367-198875325715/download/2000-2007_indicadores_demograficos_municipios_pmh.csv y descargados para evitar roturas",
+          "opacity": 0.8,
+          "defaultStyle": {
+            "regionColumn": "geocode",
+            "color": {
+              "numberOfBins": 5,
+              "colorPalette": "Oranges"
+            }
+          }
+        },
+        {
           "type": "csv",
           "name": "Ejemplo de region mapping con MVT (otros estilos y configuración). Indicadores demográficos. Municipios antes de 2007",
           "description": "Obtenidos desde https://datos.canarias.es/catalogos/estadisticas/dataset/fbb1af64-3138-4e85-9e14-cefd796b9461/resource/6b5e71f3-4bc9-4ed4-8367-198875325715/download/2000-2007_indicadores_demograficos_municipios_pmh.csv y descargados para evitar roturas",
