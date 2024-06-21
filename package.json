@@ -94,7 +94,7 @@
     "preinstall": "yarn workspace terriajs-plugin-edatos install",
     "prepare": "husky install",
     "start": "terriajs-server --config-file devserverconfig.json",
-    "gulp": "gulp",
+    "gulp": "gulp --baseHref=\"\"",
     "postinstall": "echo 'Installation successful. What to do next:\\n  yarn gulp dev   # Starts the server on port 3001, builds TerriaMap and dependencies, and rebuilds if files change.'",
     "hot": "webpack-dev-server --inline --config buildprocess/webpack.config.hot.js --hot --host 0.0.0.0",
     "prettier": "prettier --write .",
