@@ -66,13 +66,15 @@
     // "showInAppGuides": false,
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
-      "enabled": false,
-      "debug": false,
+      "enabled": false, // Don't show terria language dropdown, use eDatos one instead
+      "debug": true,
       "languages": {
         "en": "English",
-        "fr": "Français"
+        "es": "Español"
       },
-      "fallbackLanguage": "en"
+      "fallbackLanguage": "en",
+      "changeLanguageOnStartWhen": ["cookie"],
+      "lookupCookie": "chosenLocale"
     },
     "searchBarConfig": {},
     "searchProviders": [
