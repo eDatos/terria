@@ -9,7 +9,8 @@
   .tjs-standard-user-interface__ui-root,
   .tjs-standard-user-interface__uiInner,
   .tjs-standard-user-interface__uiInner > div,
-  .tjs-standard-user-interface__uiInner > section {
+  .tjs-standard-user-interface__uiInner > section,
+  #workflow-panel-portal {
     height: 100%;
   }
 
@@ -20,6 +21,7 @@
 
   .tjs-standard-user-interface__story-wrapper {
     flex: 1;
+    overflow: hidden;
   }
 
   .tjs-map-interaction-window__window {
