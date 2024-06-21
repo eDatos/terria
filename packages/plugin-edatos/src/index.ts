@@ -27,7 +27,7 @@ const plugin: TerriaPlugin = {
 
           return Promise.all([
               getMetadataValue(applicationConfig.metadata.navbarPathKey)
-                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}pepito`))
+                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}`))
                   .then(res => res.text())
                   .then(html => {
                     const header = generateElements(html, 'istac-navbar-container');
