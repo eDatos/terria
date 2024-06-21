@@ -5,9 +5,9 @@
     "basemaps",
 
     // Sample catalogs
-    "development",
     "erupcion-volcanica-la-palma",
-    "referencias-cartograficas"
+    "referencias-cartograficas",
+    "development"
 
     // Sample catalogs to load from sistemas folder via http-server .
     // "http://127.0.0.1:8081/entornos/arte/demo/apache-static/terria/config-deploy/init/erupcion-volcanica-la-palma.json",
