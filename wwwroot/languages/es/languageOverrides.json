@@ -1,0 +1,476 @@
+{
+  "gettingstarted": {
+    "title": "Empezando con el mapa",
+    "markdownText": "## Empezando con el mapa\n\nSi eres nuevo en el uso del mapa o de datos espaciales, nuestro video de Introducción cubre rápidamente la funcionalidad básica que necesitarás para agregar e interrogar conjuntos de datos.\n\nSi no tienes tiempo para ver el video, te sugerimos explorar las siguientes áreas:\n\n1. Busca una ubicación para encontrar rápidamente un área de interés\n2. Usa 'Explorar datos del mapa' para ver el catálogo de conjuntos de datos disponibles y agregarlos al mapa\n3. Interactúa con la capa de datos, incluyendo la opacidad y alternando entre activar y desactivar en el banco de trabajo a la izquierda\n4. Haz clic en los datos en el mapa para ver datos más detallados, incluyendo los datos sin procesar\n5. Cambia tu mapa base usando las opciones en 'Configuración del mapa' para ayudar a hacer algunos conjuntos de datos más visibles\n6. Acércate y cambia tu vista, incluyendo inclinar el ángulo de visión usando los controles en el lado derecho de la pantalla",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/FjSxaviSLhc",
+    "placeholderImage": "https://img.youtube.com/vi/FjSxaviSLhc/maxresdefault.jpg"
+  },
+  "stepbystepguide": {
+    "title": "Guía paso a paso",
+    "markdownText": "## Guía paso a paso\n\nLanza una guía paso a paso para varios flujos de trabajo populares a continuación:",
+    "gettingstarted": {
+      "title": "Empezando con el mapa",
+      "step1": {
+        "markdownDescription": "La búsqueda está en la parte superior del banco de trabajo a la izquierda.",
+        "title": "Busca una ubicación para encontrar un área de interés"
+      },
+      "step2": {
+        "markdownDescription": "Puedes ver el catálogo en cualquier momento",
+        "title": "Usa 'Explorar datos del mapa' para ver el catálogo de datos"
+      },
+      "step3": {
+        "markdownDescription": "Encuentra un conjunto de datos de interés",
+        "title": "Busca datos o navega por el catálogo"
+      },
+      "step4": {
+        "title": "Agrega datos al mapa haciendo clic en el signo + o el botón 'Agregar al mapa' en la ventana de vista previa",
+        "markdownDescription": ""
+      },
+      "step5": {
+        "title": "Interactúa con los datos, incluyendo la opacidad y alternando entre activar y desactivar en el banco de trabajo a la izquierda"
+      },
+      "step6": {
+        "title": "Haz clic en los datos en el mapa para ver más detalles activando el panel de Información de Características"
+      },
+      "step7": {
+        "title": "Cambia tu mapa base usando las opciones en 'Configuración del mapa' para mejorar el contraste"
+      },
+      "step8": {
+        "title": "Acércate y cambia la vista usando los controles en el lado derecho de la pantalla"
+      }
+    },
+    "satelliteimagery": {
+      "title": "Agregar imágenes satelitales",
+      "footnote": "Importante: Las imágenes satelitales pueden tardar un poco en cargarse, así que por favor sé paciente. Si las imágenes no parecen cargarse, aleja un poco la vista",
+      "step1": {
+        "title": "Encuentra la ubicación para ver imágenes satelitales",
+        "markdownDescription": "- Usa la búsqueda de ubicación o acerca y desplázate por el mapa usando el mouse o los controles de zoom"
+      },
+      "step2": {
+        "title": "Agrega las imágenes satelitales al mapa",
+        "markdownDescription": "- Abre el catálogo de datos usando el botón 'Explorar datos del mapa'\n- Navega por los conjuntos de datos para seleccionar tu opción satelital: Landsat o Sentinel, y las imágenes diarias o compuestas. Esto puede depender de la resolución de la imagen que necesitas (10m o 25m) y si deseas imágenes diarias, compuestas de 16 días o promedios anuales\n - Selecciona 'Agregar al mapa' para ver las imágenes satelitales"
+      },
+      "step3": {
+        "title": "Filtra imágenes para encontrar imágenes satelitales",
+        "markdownDescription": "- Filtra imágenes por ubicación para encontrar rápidamente imágenes satelitales para esa ubicación\n - Los satélites rodean el globo varias veces al día. Puedes esperar que las imágenes satelitales estén disponibles para una ubicación cada dos semanas\n - Si no has seleccionado tu punto de interés en el mapa, acerca la vista para seleccionar uno. Verás el filtro aplicado en azul en el Banco de Trabajo a la izquierda"
+      },
+      "step4": {
+        "title": "Selecciona una fecha y hora",
+        "markdownDescription": "- Usa el selector de fechas para seleccionar una fecha y hora. Recorre años anteriores usando la flecha hacia atrás\n - Elige otra fecha si tu imagen está cubierta por nubes. Puedes recorrer rápidamente hacia atrás y adelante usando las flechas junto al selector de fechas"
+      }
+    },
+    "comparetimeseries": {
+      "title": "Ver y comparar diferentes puntos en el tiempo",
+      "footnote": "Importante: Cualquier dato de serie temporal puede compararse usando el Modo de Pantalla Dividida, no solo imágenes satelitales",
+      "step1": {
+        "title": "Agrega un conjunto de datos de serie temporal al mapa",
+        "markdownDescription": "- Las imágenes satelitales son un buen ejemplo de datos de serie temporal, con muchos satélites que datan de décadas atrás\n- Encuentra tu ubicación de interés y filtra las imágenes disponibles por esta ubicación\n-Consulta nuestra guía de Agregar Imágenes Satelitales al Mapa para más información"
+      },
+      "step2": {
+        "title": "Selecciona la fecha y hora",
+        "markdownDescription": "- En el banco de trabajo a la izquierda, selecciona la fecha y hora lo que abrirá el selector de fechas\n- Selecciona un año, mes y fecha, o navega hacia atrás a otros años e incluso siglos usando la flecha hacia atrás\n- Las fechas disponibles aparecen en azul"
+      },
+      "step3": {
+        "title": "Compara diferentes fechas en una ubicación",
+        "markdownDescription": "- Desde el menú desplegable de 3 puntos en el banco de trabajo, presiona 'Comparar' para activar el Modo de Pantalla Dividida\n- Una copia duplicada de tu conjunto de datos aparecerá en el banco de trabajo\n- Elige las fechas que deseas comparar en el lado izquierdo y derecho de la pantalla\n- Arrastra el deslizador usando el botón blanco para deslizar y comparar las dos fechas de las imágenes"
+      },
+      "step4": {
+        "title": "Cierra el modo de pantalla dividida",
+        "markdownDescription": "- Sal del modo de pantalla dividida presionando la 'x' del título del Modo de Pantalla Dividida en el banco de trabajo\n- Elimina la copia duplicada de tu conjunto de datos en el banco de trabajo usando el menú desplegable de 3 puntos"
+      }
+    }
+  },
+  "helpContentTerm1": {
+    "term": "conjunto de datos",
+    "aliases": ["data set", "data sets", "datasets"],
+    "content": "Una colección de información relacionada, organizada como una usando una estructura de datos común, por ejemplo, \"precios promedio de casas en Sídney para 2019\" o \"temperatura mínima y máxima diaria\""
+  },
+  "helpContentTerm2": {
+    "term": "serie temporal",
+    "aliases": ["timeseries"],
+    "content": "Una secuencia de datos recolectados en diferentes puntos en el tiempo, por ejemplo, datos de sensores de temperatura o una galería de imágenes del mismo lugar"
+  },
+  "helpContentTerm3": {
+    "term": "banco de trabajo",
+    "content": "El panel en el lado izquierdo de la pantalla que muestra los conjuntos de datos que has agregado al mapa"
+  },
+  "helpContentTerm4": {
+    "term": "4D",
+    "content": "Datos 3D que también tienen un componente de serie temporal"
+  },
+  "helpContentTerm5": {
+    "term": "catálogo",
+    "aliases": ["catalogue"],
+    "content": "El inventario de todos los conjuntos de datos disponibles para ser agregados al mapa"
+  },
+  "helpContentTerm6": {
+    "term": "mapas base",
+    "aliases": ["basemap", "base map", "basemaps"],
+    "content": "Diferentes opciones de mapas base en blanco, como imágenes de Bing, carreteras, mapas oscuros o claros"
+  },
+  "helpContentTerm7": {
+    "term": "conjunto de datos fuente",
+    "content": "El conjunto de datos que agregaste a tu banco de trabajo que permite cálculos de diferencia"
+  },
+  "helpContentTerm8": {
+    "term": "estilo de vista previa",
+    "content": "La forma en que el conjunto de datos aparece en la ventana de vista previa. Recomendamos color verdadero para buscar imágenes sin nubes"
+  },
+  "deltaTool": {
+    "titlePrefix": "Detección de cambio",
+    "description": "Esta herramienta visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo.",
+    "pickLocation": "Para ver las imágenes disponibles, seleccione su ubicación de interés en el mapa opuesto.",
+    "cancelBtn": "Cancelar",
+    "generateDeltaBtn": "Generar mapa de diferencia",
+    "selectedLocation": "Lugar Seleccionado",
+    "primaryImage": "Imagen primaria",
+    "secondaryImage": "Imagen secundaria",
+    "pickerMessage": {
+      "pickFirst": "Seleccione un punto haciendo clic en el mapa",
+      "pickAnother": "Haga clic en otro punto para cambiar la selección.",
+      "pickError": "¡Error al intentar recuperar las imágenes de la ubicación! Por favor, seleccione un punto de nuevo haciendo clic en el mapa."
+    },
+    "catalogItem": {
+      "description": "Esta capa visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo"
+    },
+    "loadingError": {
+      "title": "Error al cargar la herramienta Delta",
+      "message": "Se produjo un error al intentar cargar la herramienta Delta desde el servidor. Por favor, inténtelo de nuevo."
+    }
+  },
+  "models": {
+    "tableStyling": {
+      "copyUserStratum": "Copiar configuración en el portapapeles",
+      "fill": {
+        "selectableDimensions": {
+          "tableColorColumn": {
+            "name": "Variable"
+          },
+          "dataType": {
+            "name": "Tipo de columna (avanzada)"
+          },
+          "type": {
+            "name": "Tipo",
+            "undefinedLabel": "Por favor especifique",
+            "options": {
+              "noStyle": {
+                "name": "Sin estilo"
+              },
+              "sequentialContinuous": {
+                "name": "Secuencial (continuo)"
+              },
+              "sequentialDiscrete": {
+                "name": "Secuencial (discreto)"
+              },
+              "divergingContinuous": {
+                "name": "Divergente (continuo)"
+              },
+              "divergingDiscrete": {
+                "name": "Divergente (concreto)"
+              },
+              "qualitative": {
+                "name": "Cualitativo"
+              },
+              "customQualitative": {
+                "name": "Personalizado (cualitativo)"
+              },
+              "customDiscrete": {
+                "name": "Personalizado (discreto)"
+              }
+            }
+          },
+          "scheme": {
+            "name": "Esquema"
+          },
+          "numberOfBins": {
+            "name": "Número de contenedores"
+          }
+        },
+        "name": "Color de relleno"
+      },
+      "legend": {
+        "name": "Leyenda",
+        "selectableDimensions": {
+          "legendTitle": {
+            "name": "Título"
+          }
+        }
+      },
+      "styleOptions": {
+        "name": "Opciones de estilo",
+        "selectableDimensions": {
+          "styleTitle": {
+            "name": "Título"
+          },
+          "longitudeColumn": {
+            "name": "Columna de longitud"
+          },
+          "latitudeColumn": {
+            "name": "Columna de latitud"
+          }
+        }
+      },
+      "timeOptions": {
+        "name": "Opciones temporales",
+        "selectableDimensions": {
+          "tableTimeColumn": {
+            "name": "Columna temporal"
+          },
+          "tableEndTimeColumn": {
+            "name": "Columna de tiempo final"
+          },
+          "tableTimeIdColumns": {
+            "name": "Columnas de identificador"
+          },
+          "tableTimeIsSampled": {
+            "name": "Es muestreado",
+            "options": {
+              "true": {
+                "name": "Sí"
+              },
+              "false": {
+                "name": "No"
+              }
+            }
+          },
+          "tableTimeDisplayDuration": {
+            "name": "Mostrar duración"
+          },
+          "tableTimeSpreadStartTime": {
+            "name": "Unificar fecha inicial datos",
+            "options": {
+              "true": {
+                "name": "Sí"
+              },
+              "false": {
+                "name": "No"
+              }
+            }
+          },
+          "tableTimeSpreadFinishTime": {
+            "name": "Unificar fecha final datos",
+            "options": {
+              "true": {
+                "name": "Sí"
+              },
+              "false": {
+                "name": "No"
+              }
+            }
+          }
+        }
+      },
+      "workbenchOptions": {
+        "name": "Opciones del banco de trabajo",
+        "selectableDimensions": {
+          "tableStyleEnalbed": {
+            "name": "Mostrar estilo en el banco de trabajo",
+            "options": {
+              "true": {
+                "name": "Estilo mostrado"
+              },
+              "false": {
+                "name": "Estilo oculto"
+              }
+            }
+          },
+          "showDisableStyleOption": {
+            "name": "Mostrar opción para deshabilitar estilo"
+          },
+          "showDisableTimeOption": {
+            "name": "Mostrar opción para deshabilitar opciones temporales"
+          },
+          "enableManualRegionMapping": {
+            "name": "Permitir mapeo de regiones manual"
+          }
+        }
+      },
+      "variableAndColumn": {
+        "name": "Variable/columna",
+        "selectableDimensions": {
+          "columnTitle": {
+            "name": "Título"
+          },
+          "columnUnits": {
+            "name": "Unidades"
+          }
+        }
+      },
+      "displayRange": {
+        "name": "Rango de visualización",
+        "selectableDimensions": {
+          "max": {
+            "name": "Máx"
+          }
+        }
+      },
+      "colors": {
+        "name": "Colores",
+        "selectableDimensions": {
+          "color": {
+            "name": "Color"
+          },
+          "value": {
+            "name": "Valor"
+          },
+          "remove": {
+            "value": "Quitar"
+          },
+          "add": {
+            "value": "Añadir color"
+          }
+        }
+      },
+      "name": "Estilo",
+      "reset": "Restaurar estilo por defecto",
+      "showAdvancedOptions": "Mostrar opciones avanzadas",
+      "hideAdvancedOptions": "Ocultar opciones avanzadas",
+      "data": {
+        "name": "Datos",
+        "selectableDimensions": {
+          "dataset": {
+            "name": "Conjunto de datos"
+          },
+          "tableStyle": {
+            "name": "Estilo"
+          },
+          "tableStyleType": {
+            "name": "Símbolos",
+            "options": {
+              "fill": {
+                "name": "Color de relleno"
+              },
+              "outline": {
+                "name": "Color del borde"
+              }
+            }
+          }
+        }
+      },
+      "bins": {
+        "name": "Contenedores",
+        "selectableDimensions": {
+          "start": {
+            "name": "Desde {{value1}} hasta {{value2}}",
+            "selectableDimensions": {
+              "color": {
+                "name": "Color"
+              },
+              "stop": {
+                "name": "Final"
+              },
+              "start": {
+                "name": "Inicio"
+              }
+            }
+          }
+        }
+      },
+      "min": {
+        "name": "Mín"
+      },
+      "additionalColors": {
+        "name": "Colores adicionales",
+        "selectableDimensions": {
+          "nullColor": {
+            "name": "Color por defecto"
+          },
+          "outlierColor": {
+            "name": "Color valores atípicos"
+          },
+          "regionColor": {
+            "name": "Color región"
+          }
+        }
+      },
+      "outline": {
+        "name": "Estilo borde",
+        "selectableDimensions": {
+          "color": {
+            "name": "Color"
+          },
+          "width": {
+            "name": "Ancho"
+          }
+        }
+      },
+      "style": {
+        "selectableDimensions": {
+          "column": {
+            "name": "Variable"
+          }
+        },
+        "null": {
+          "name": "Por defecto"
+        }
+      }
+    },
+    "tableData": {
+      "noData": "No hay datos que mostrar.",
+      "custom": "Personalizado",
+      "editStyle": "Editar estilo",
+      "activeStyle": "Mostrar Variable",
+      "manualRegionMapping": "Mapeo de regiones manual",
+      "regionColumn": "Columna de región ",
+      "regionMapping": "Mapeo de regiones",
+      "timeDimensionEnabled": "Opciones temporales activadas (click para deshabilitar)",
+      "timeDimensionDisabled": "Opciones temporales desactivadas (click para habilitar)",
+      "styleDisabledLabel": "Deshabilitar estilo"
+    },
+    "webMapServiceCatalogItem": {
+      "getCapabilitiesUrl": "URL GetCapabilities",
+      "serviceDescription": "Descripción del servicio",
+      "dataDescription": "Descripción de los datos",
+      "serviceContact": "Contacto del servicio",
+      "accessConstraints": "Restricciones de acceso",
+      "defaultStyleLabel": "Estilo por defecto",
+      "noLayerFoundTitle": "Capa no encontrada",
+      "noLayerFoundMessage": "El conjunto de dato WFS '{{name}}' no tiene capas que coincidan con '{{typeNames}}'. O el catálogo ha sido configurado erróneamente, o el servidor WFS ha cambiado."
+    },
+    "raiseError": {
+      "notificationFeedback": "Para preguntas y comentarios, haga click aquí.",
+      "developerDetails": "Detalles para desarrolladores"
+    },
+    "userDrawing": {
+      "messageHeader": "Dibujar en el mapa",
+      "clickToAddFirstPoint": "Haga click para añadir un punto",
+      "btnCancel": "Cancelar"
+    },
+    "mapboxVectorTile": {
+      "name": "Teselas vectoriales de Mapbox (MVT)"
+    }
+  },
+  "selectableDimensions": {
+    "disabled": "Deshabilitado",
+    "colorRemove": "Quitar",
+    "colorAdd": "Añadir",
+    "enabled": "Activado",
+    "undefinedLabel": "No especificado"
+  },
+  "compare": {
+    "done": "Hecho"
+  },
+  "toast": {
+    "mapIsZooming": "Cargando zoom ideal..."
+  },
+  "relatedMaps": {
+    "buttonText": "Mapas relacionados",
+    "buttonTitle": "Ver mapas relacionados",
+    "panelHeading": "Mapas relacionados",
+    "panelText": "Hacer click en el mapa inferior lo abrirá en una ventana o pestaña separadas."
+  },
+  "preview": {
+    "selectMultipleDatasets": "<0>Pulse <strong>Mayus</strong> y haga click</0><1 /><2>para añadir múltiples conjuntos de datos</2>"
+  },
+  "map": {
+    "extraCreditLinks": {
+      "dataAttribution": "Atribución de los datos",
+      "disclaimer": "Descargo de responsabilidad",
+      "basemap": "Mapa base"
+    }
+  },
+  "mapNavigation": {
+    "additionalToolsTitle": "Abrir herramientas adicionales",
+    "additionalTools": "Herramientas adicionales"
+  }
+}
