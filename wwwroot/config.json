@@ -2,6 +2,25 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
   "parameters": {
+    // Configuration enviroment dependant:
+
+    // Shown when things go wrong.
+    "supportEmail": "consultas.istac@gobiernodecanarias.org",
+    // see `languageOverrides.json` in languages/en
+    "languageConfiguration": {
+      "enabled": false, // Don't show terria language dropdown, use eDatos one instead
+      "debug": true,
+      "languages": {
+        "en": "English",
+        "es": "Español"
+      },
+      "fallbackLanguage": "en",
+      "changeLanguageOnStartWhen": ["cookie"],
+      "lookupCookie": "chosenLocale"
+    },
+    "bingMapsKey": "ApzG8h1sQqyEW-bdAWhNQ8g3ZVfxX_q5HsepUWacOJXXQmCYzkm2Np3ydSQrqrtO",
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZDY5MDE1YS0yNGFlLTQ1MzctYWNkNy0wNDQ1YWNiNTM5MDIiLCJpZCI6Mjk5Miwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzODAzMzgyNn0.a2uTotdiHUo8FiHsO4MVNZ1KT5pOF0rb7CFdwbRAsOo",
+  
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
@@ -41,8 +60,6 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [],
     "theme": { "logoHeight": "0" },
-    // Shown when things go wrong.
-    "supportEmail": "consultas.istac@gobiernodecanarias.org",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
@@ -64,18 +81,6 @@
     // },
     // True to display in-app guides.
     // "showInAppGuides": false,
-    // see `languageOverrides.json` in languages/en
-    "languageConfiguration": {
-      "enabled": false, // Don't show terria language dropdown, use eDatos one instead
-      "debug": true,
-      "languages": {
-        "en": "English",
-        "es": "Español"
-      },
-      "fallbackLanguage": "en",
-      "changeLanguageOnStartWhen": ["cookie"],
-      "lookupCookie": "chosenLocale"
-    },
     "searchBarConfig": {},
     "searchProviders": [
       {
@@ -369,8 +374,6 @@
     // ]
 
     // Extra configuration
-    "bingMapsKey": "ApzG8h1sQqyEW-bdAWhNQ8g3ZVfxX_q5HsepUWacOJXXQmCYzkm2Np3ydSQrqrtO",
-    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZDY5MDE1YS0yNGFlLTQ1MzctYWNkNy0wNDQ1YWNiNTM5MDIiLCJpZCI6Mjk5Miwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzODAzMzgyNn0.a2uTotdiHUo8FiHsO4MVNZ1KT5pOF0rb7CFdwbRAsOo",
     "serverConfigUrl": "serverconfig.json",
     "regionMappingDefinitionsUrl": "data/regionMapping.json",
     "aboutButtonHrefUrl": null,
