@@ -116,6 +116,28 @@
     "term": "estilo de vista previa",
     "content": "La forma en que el conjunto de datos aparece en la ventana de vista previa. Recomendamos color verdadero para buscar imágenes sin nubes"
   },
+  "deltaTool": {
+    "titlePrefix": "Detección de cambio",
+    "description": "Esta herramienta visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo.",
+    "pickLocation": "Para ver las imágenes disponibles, seleccione su ubicación de interés en el mapa opuesto.",
+    "cancelBtn": "Cancelar",
+    "generateDeltaBtn": "Generar mapa de diferencia",
+    "selectedLocation": "Lugar Seleccionado",
+    "primaryImage": "Imagen primaria",
+    "secondaryImage": "Imagen secundaria",
+    "pickerMessage": {
+      "pickFirst": "Seleccione un punto haciendo clic en el mapa",
+      "pickAnother": "Haga clic en otro punto para cambiar la selección.",
+      "pickError": "¡Error al intentar recuperar las imágenes de la ubicación! Por favor, seleccione un punto de nuevo haciendo clic en el mapa."
+    },
+    "catalogItem": {
+      "description": "Esta capa visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo"
+    },
+    "loadingError": {
+      "title": "Error al cargar la herramienta Delta",
+      "message": "Se produjo un error al intentar cargar la herramienta Delta desde el servidor. Por favor, inténtelo de nuevo."
+    }
+  },
   "models": {
     "tableStyling": {
       "copyUserStratum": "Copiar configuración en el portapapeles",
