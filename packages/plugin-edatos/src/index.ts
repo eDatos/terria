@@ -18,44 +18,27 @@ const plugin: TerriaPlugin = {
       .then(application => {
           var applicationConfig = application;
           
-          function getMetadataValue(metadataValueKey) {
+          function getMetadataValue(metadataValueKey: string) {
               var metadataEndpoint = applicationConfig.metadata.endpoint;
               return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
                   .then(res => res.json())
                   .then(jsonResponse => jsonResponse.value);
           }
 
-          function renderMetadataHtml(metadataValueKey, querySelectorId) {
-              return getMetadataValue(metadataValueKey)
-                  .then(value => fetch(value))
-                  .then(res => res.text())
-                  .then(html => {
-                      document.querySelector(querySelectorId).innerHTML = html;
-                  })
-          }
-
           return Promise.all([
               getMetadataValue(applicationConfig.metadata.navbarPathKey)
-                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}`))
+                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}pepito`))
                   .then(res => res.text())
                   .then(html => {
                     const header = generateElements(html, 'istac-navbar-container');
 
                     // See lib\Views\render.jsx
-                    document.getElementById("ui").prepend(header); 
-                    reinsertScripts(document.getElementById('istac-navbar-container'));
-
-                    // document.querySelector('#istac-app-header-content').innerHTML = `<div id="dropdown-language-container"></div>`;
-                          
-                          // const DropdownLanguage = require("./Views/DropdownLanguage").default;
-                          // // DropdownLanguage._Request;
-                          // var dropdownContainer = document.getElementById("dropdown-language-container");
-                          // if (dropdownContainer) {   
-                          //   ReactDOM.render(<DropdownLanguage/>, dropdownContainer);
-                          // }
-
-                  }),
-              // renderMetadataHtml(applicationConfig.metadata.footerPathKey, '#istac-footer-container')
+                    const ui = document.getElementById("ui");
+                    if (ui) {
+                      ui.prepend(header); 
+                      reinsertScripts(document.getElementById('istac-navbar-container'));
+                    }
+                 })
           ])
           .then(_ => applicationConfig)
           .catch(console.error);
@@ -74,7 +57,8 @@ function generateElements(html: string, id: string) {
 }
 
 
-function reinsertScripts(element: Element) {
+function reinsertScripts(element: Element | null) {
+  if (!element) { return; }
   const scriptList = element.getElementsByTagName('script');
   for (const script of scriptList) {
       const scriptCopy = document.createElement('script');
@@ -84,7 +68,7 @@ function reinsertScripts(element: Element) {
           scriptCopy.src = script.src;
       }
       scriptCopy.async = false;
-      script.parentNode.replaceChild(scriptCopy, script);
+      script.parentNode?.replaceChild(scriptCopy, script);
   }
 }
 
