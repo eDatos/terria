@@ -80,7 +80,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "^6.0.11",
-    "terriajs": "8.7.2",
+    "terriajs": "github:eDatos/terriajs#8.7.2",
     "terriajs-cesium": "8.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "~5.2.0",
