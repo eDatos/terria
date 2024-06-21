@@ -19,6 +19,7 @@
     "typescript": "~5.2.0"
   },
   "scripts": {
+    "postinstall": "yarn build",
     "build": "rollup -c rollup.config.ts",
     "watch": "rollup -c rollup.config.ts -w",
     "test": "exit 0"
