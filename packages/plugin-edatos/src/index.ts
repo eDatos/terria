@@ -36,7 +36,6 @@ const plugin: TerriaPlugin = {
                     const ui = document.getElementById("ui");
                     if (ui) {
                       ui.prepend(header); 
-                      reinsertScripts(document.getElementById('istac-navbar-container'));
                     }
                  })
           ])
@@ -51,25 +50,9 @@ const plugin: TerriaPlugin = {
 
 function generateElements(html: string, id: string) {
   const element = document.createElement('div');
-  element.innerHTML = html;
+  element.appendChild(document.createRange().createContextualFragment(html));
   element.id = id;
   return element;
-}
-
-
-function reinsertScripts(element: Element | null) {
-  if (!element) { return; }
-  const scriptList = element.getElementsByTagName('script');
-  for (const script of scriptList) {
-      const scriptCopy = document.createElement('script');
-      if (script.innerHTML) {
-          scriptCopy.innerHTML = script.innerHTML;
-      } else if (script.src) {
-          scriptCopy.src = script.src;
-      }
-      scriptCopy.async = false;
-      script.parentNode?.replaceChild(scriptCopy, script);
-  }
 }
 
 export default plugin;
