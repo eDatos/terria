@@ -91,7 +91,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "preinstall": "yarn workspace terriajs-plugin-edatos install",
     "prepare": "husky install",
     "start": "terriajs-server --config-file devserverconfig.json",
     "gulp": "gulp --baseHref=\"\"",
