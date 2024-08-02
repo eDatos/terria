@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "terriajs-plugin-api": "0.0.1-alpha.16",
-    "terriajs-plugin-sample": "0.0.1-alpha.7",
     "terriajs-plugin-edatos": "0.0.1",
+    "terriajs-plugin-sample": "0.0.1-alpha.7",
     "terriajs-server": "^4.0.0"
   },
   "config": {
@@ -80,7 +80,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "^6.0.11",
-    "terriajs": "github:eDatos/terriajs#8.7.2",
+    "terriajs": "https://github.com/Edatos/terriajs.git#edatos-8.7.2",
     "terriajs-cesium": "8.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "~5.2.0",
