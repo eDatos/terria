@@ -30,11 +30,11 @@ const plugin: TerriaPlugin = {
                   .then(value => fetch(`${value}?appName=${viewState.terria.appName}&appId=terria`))
                   .then(res => res.text())
                   .then(html => {
-                    const header = generateElements(html, 'istac-navbar-container');
-
+                    
                     // See lib\Views\render.jsx
                     const ui = document.getElementById("ui");
                     if (ui) {
+                      const header = generateElements(html, 'istac-navbar-container');
                       ui.prepend(header); 
                     }
                  }),
@@ -42,11 +42,11 @@ const plugin: TerriaPlugin = {
                  .then(value => fetch(`${value}`))
                  .then(res => res.text())
                  .then(html => {
-                   const footer = generateElements(html, 'istac-footer-container');
-
+                   
                    // See lib\Views\render.jsx
                    const ui = document.getElementById("ui");
                    if (ui) {
+                     const footer = generateElements(html, 'istac-footer-container');
                      ui.append(footer);
                      ui.append(generateStyles(`footer.edatos-footer {
                         position: relative;
