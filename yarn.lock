@@ -11006,9 +11006,9 @@ terriajs-server@^4.0.0:
     request-promise "^4.0.1"
     yargs "^13.2.4"
 
-"terriajs@github:eDatos/terriajs#8.7.2":
+"terriajs@https://github.com/Edatos/terriajs.git#edatos-8.7.2":
   version "8.7.2"
-  resolved "https://codeload.github.com/eDatos/terriajs/tar.gz/a04930a0527cd9085fbe62c11f0c22f33ca9255d"
+  resolved "https://github.com/Edatos/terriajs.git#b7e220b94f2b0f9a4969c2dd07a9703c6ab1fb98"
   dependencies:
     "@babel/core" "^7.23.5"
     "@babel/parser" "^7.23.5"

@@ -27,7 +27,7 @@ const plugin: TerriaPlugin = {
 
           return Promise.all([
               getMetadataValue(applicationConfig.metadata.navbarPathKey)
-                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}`))
+                  .then(value => fetch(`${value}?appName=${viewState.terria.appName}&appId=terria`))
                   .then(res => res.text())
                   .then(html => {
                     const header = generateElements(html, 'istac-navbar-container');
@@ -37,7 +37,23 @@ const plugin: TerriaPlugin = {
                     if (ui) {
                       ui.prepend(header); 
                     }
-                 })
+                 }),
+                 getMetadataValue(applicationConfig.metadata.footerPathKey)
+                 .then(value => fetch(`${value}`))
+                 .then(res => res.text())
+                 .then(html => {
+                   const footer = generateElements(html, 'istac-footer-container');
+
+                   // See lib\Views\render.jsx
+                   const ui = document.getElementById("ui");
+                   if (ui) {
+                     ui.append(footer);
+                     ui.append(generateStyles(`footer.edatos-footer {
+                        position: relative;
+                        max-height: unset;
+                    }`));
+                   }
+                })
           ])
           .then(_ => applicationConfig)
           .catch(console.error);
@@ -53,6 +69,12 @@ function generateElements(html: string, id: string) {
   element.appendChild(document.createRange().createContextualFragment(html));
   element.id = id;
   return element;
+}
+
+function generateStyles(css: string): Node {
+    const style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    return style;
 }
 
 export default plugin;
