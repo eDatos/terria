@@ -32,11 +32,18 @@ const plugin: TerriaPlugin = {
                   .then(html => {
                     
                     // See lib\Views\render.jsx
-                    const ui = document.getElementById("ui");
-                    if (ui) {
-                      const header = generateElements(html, 'istac-navbar-container');
-                      ui.prepend(header); 
-                    }
+                    const observer = new MutationObserver(mutations => {
+                      const ui = document.getElementById("ui");
+                      if (ui) {
+                        observer.disconnect();
+                        const header = generateElements(html, 'istac-navbar-container');
+                        ui.prepend(header); 
+                      }
+                    });
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true
+                    });
                  }),
                  getMetadataValue(applicationConfig.metadata.footerPathKey)
                  .then(value => fetch(`${value}`))
@@ -44,15 +51,22 @@ const plugin: TerriaPlugin = {
                  .then(html => {
                    
                    // See lib\Views\render.jsx
-                   const ui = document.getElementById("ui");
-                   if (ui) {
-                     const footer = generateElements(html, 'istac-footer-container');
-                     ui.append(footer);
-                     ui.append(generateStyles(`footer.edatos-footer {
-                        position: relative;
-                        max-height: unset;
-                    }`));
-                   }
+                   const observer = new MutationObserver(mutations => {
+                    const ui = document.getElementById("ui");
+                    if (ui) {
+                      observer.disconnect();
+                      const footer = generateElements(html, 'istac-footer-container');
+                      ui.append(footer);
+                      ui.append(generateStyles(`footer.edatos-footer {
+                          position: relative;
+                          max-height: unset;
+                      }`));
+                    }
+                  });
+                    observer.observe(document.body, {
+                      childList: true,
+                      subtree: true
+                    });
                 })
           ])
           .then(_ => applicationConfig)
