@@ -13,6 +13,9 @@
           "members": [
             {
               "type": "wms",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true
+              },
               "name": "Islas",
               "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
               "isOpenInWorkbench": true,
@@ -30,6 +33,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Grandes comarcas estadísticas",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -42,6 +48,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Comarcas estadísticas",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -66,6 +75,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Municipios",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -78,6 +90,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Municipios (hasta 2007)",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -102,6 +117,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2020",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -114,6 +132,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2019",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -126,6 +147,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2018",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -138,6 +162,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2017",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -150,6 +177,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2016",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -162,6 +192,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2015",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -174,6 +207,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2014",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -186,6 +222,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2013",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -198,6 +237,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2012",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -210,6 +252,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2011",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -222,6 +267,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2010",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -234,6 +282,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2009",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -246,6 +297,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2008",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -258,6 +312,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2007",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -270,6 +327,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2006",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -282,6 +342,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2005",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -294,6 +357,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Distritos a 1 de Enero de 2004",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -318,6 +384,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2020",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -330,6 +399,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2019",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -342,6 +414,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2018",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -354,6 +429,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2017",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -366,6 +444,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2016",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -378,6 +459,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2015",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -390,6 +474,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2014",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -402,6 +489,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2013",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -414,6 +504,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2012",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -426,6 +519,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2011",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -438,6 +534,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2010",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -450,6 +549,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2009",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -462,6 +564,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2008",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -474,6 +579,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2007",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -486,6 +594,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2006",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -498,6 +609,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2005",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -510,6 +624,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Secciones a 1 de Enero de 2004",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -534,6 +651,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Entidades turísticas",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -546,6 +666,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Núcleos turísticos",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -570,6 +693,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Malla de 1 kilómetro",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -582,6 +708,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Malla de 500 metros",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -594,6 +723,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Malla de 250 metros",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -630,6 +762,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Centros de Educación de Canarias",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -646,6 +781,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Centros de Educación Infantil y Primaria",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -662,6 +800,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Centros de Educación Secundaria",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -678,6 +819,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Áreas de influencia de los Centros de Educación Infantil y Primaria",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -694,6 +838,9 @@
                 },
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Áreas de influencia de los Centros de Secundaria",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,
@@ -739,6 +886,9 @@
                   "members": [
                     {
                       "type": "wms",
+                      "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true
+                      },
                       "name": "Criterios de valoración de la sección 7ª del PDR 2014-2020",
                       "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                       "isOpenInWorkbench": true,
@@ -755,6 +905,9 @@
                     },
                     {
                       "type": "wms",
+                      "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true
+                      },
                       "name": "Propuesta Delimitaciones Zonas Rurales 2014-2020",
                       "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                       "isOpenInWorkbench": true,
@@ -771,6 +924,9 @@
                     },
                     {
                       "type": "wms",
+                      "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true
+                      },
                       "name": "Zona de Accción del PDR 2014-2020",
                       "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                       "isOpenInWorkbench": true,
@@ -787,6 +943,9 @@
                     },
                     {
                       "type": "wms",
+                      "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true
+                      },
                       "name": "Zona de Accción Leader del PDR 2014-2020",
                       "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                       "isOpenInWorkbench": true,
@@ -815,6 +974,9 @@
                   "members": [
                     {
                       "type": "wms",
+                      "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true
+                      },
                       "name": "Zonas Rurales del PDRS Abril 2010",
                       "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                       "isOpenInWorkbench": true,
@@ -850,6 +1012,9 @@
               "members": [
                 {
                   "type": "wms",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true
+                  },
                   "name": "Espacios Naturales",
                   "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                   "isOpenInWorkbench": true,

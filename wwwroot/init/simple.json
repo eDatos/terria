@@ -14,6 +14,9 @@
       "members": [
         {
           "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
           "localId": "mybroadband%3AMyBroadband_ADSL_Availability",
           "legends": [
             {
@@ -674,6 +677,9 @@
           "members": [
             {
               "type": "wms",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true
+              },
               "name": "Pumped hydro: 150GWh 18h",
               "id": "c855dca8",
               "info": [
@@ -721,6 +727,9 @@
         },
         {
           "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
           "name": "Australia Upper Reservoir Locations - ANU STORES",
           "info": [
             {
