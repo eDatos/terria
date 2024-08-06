@@ -17,6 +17,9 @@
         },
         {
           "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
           "name": "Ejemplo de WMS region mapping - Indicadores demográficos. Municipios de Canarias. 01/01/2022",
           "url": "https://datos.canarias.es/api/estadisticas/geographical-resources/indicadoresdemograficos/wms",
           "isOpenInWorkbench": true,
