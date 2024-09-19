@@ -28,9 +28,13 @@
     position: absolute;
     z-index: $notification-window-z-index;
   }
-  
+
   .tjs-feature-info-download__icon--download {
     margin-left: 10px;
+  }
+
+  .tjs-standard-user-interface__showWorkbenchButton {
+    top: 60px;
   }
 
   @media (max-width: 768px) {
