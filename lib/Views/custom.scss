@@ -28,6 +28,10 @@
     position: absolute;
     z-index: $notification-window-z-index;
   }
+  
+  .tjs-feature-info-download__icon--download {
+    margin-left: 10px;
+  }
 
   @media (max-width: 768px) {
     .tjs-mobile-header__ui {
