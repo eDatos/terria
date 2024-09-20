@@ -476,8 +476,11 @@
     "additionalTools": "Herramientas adicionales"
   },
   "workbench": {
+    "label": "Datasets",
     "opacity": "Opacidad: {{opacity}}%",
-    "zoomToTitle": "Zoom a la extensión"
+    "zoomToTitle": "Zoom a la extensión",
+    "expandAll": "Ampliar Todo",
+    "collapseAll": "Colapsar Todo"
   },
   "emptyWorkbench": {
     "helpfulHintsOne": "Busque los datos disponibles seleccionando \"Explorar los datos del mapa\" o haga clic en \"Subir\" para añadir sus propios datos al mapa.",
@@ -494,7 +497,7 @@
   },
   "pedestrianMode": {
     "toolButtonTitle": "Modo Peatón",
-    "dropPedestrianTooltipMessage": "<b>Click izquierdo</b> para seleccionar la ubicación<br /><b>Click derecho / Esc</b> para cancelar",
+    "dropPedestrianTooltipMessage": "<b>Click izquierdo</b> para seleccionar<br /><b>Click derecho / Esc</b> para cancelar",
     "controls": {
       "title": "Controles"
     }
