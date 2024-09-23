@@ -15,3 +15,7 @@ En el config.json hay varias URLs de la siguiente forma:
 // "http://127.0.0.1:8081/entornos/arte/demo/apache-static/terria/config-deploy/init/referencias-cartograficas.json"
 
 Para que funcionen se asume que en la carpeta de sistemas, se ha ejecutado el comando
+
+# Para levantar el entorno
+
+Como indica el yarn install, para levantar en local se hace con un yarn gulp dev
