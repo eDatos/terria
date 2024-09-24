@@ -4,6 +4,16 @@ Terria recomienda el uso de los yarn workspaces (https://docs.terria.io/guide/co
 
 En circunstancias normales, terria coge como dependencia terriajs desde lo indicado en el package (github:eDatos/terriajs#x.y.z). Sin embargo, si hemos clonado el repositorio dentro de la carpeta package/terriajs, cogerá los cambios de allí
 
+## Configuración package.json
+
+Como indica la documentación, al cambiar entre ambos valores, borrar la carpeta mediante un rm -R node_modules/terriajs
+
+Cogiendo la dependencia desde el packages:
+"terriajs": "8.7.2",
+
+Cogiendo la dependencia desde el github:
+"terriajs": "https://github.com/Edatos/terriajs.git#edatos-8.7.2",
+
 ## Problemas al usar workspaces
 
 Si tras hacer un yarn install no está cogiendo correctamente algunas de las dependencias dentro del packages, como la dependencia de terriajs-plugin-edatos, hacer un yarn install --check-files
