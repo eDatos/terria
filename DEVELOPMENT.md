@@ -8,8 +8,10 @@ En circunstancias normales, terria coge como dependencia terriajs desde lo indic
 
 Como indica la documentación, al cambiar entre ambos valores, borrar la carpeta mediante un rm -R node_modules/terriajs
 
+Revisamos que en el package.json del terriajs en versión tenemos el metadata +local añadido. Este cambio no lo subimos, pero nos permite comprobar más fácil que la versión instalada es la del package y no la del git.
+
 Cogiendo la dependencia desde el packages:
-"terriajs": "8.7.2",
+"terriajs": "8.7.2+local",
 
 Cogiendo la dependencia desde el github:
 "terriajs": "https://github.com/Edatos/terriajs.git#edatos-8.7.2",
@@ -29,3 +31,22 @@ Para que funcionen se asume que en la carpeta de sistemas, se ha ejecutado el co
 # Para levantar el entorno
 
 Como indica el yarn install, para levantar en local se hace con un yarn gulp dev
+
+# Para actualizar la versión
+
+El proceso se resume en
+
+- En terriajs (que estará dentro del packages de terria):
+  - Hacer un merge del tag al que queremos actualizar, resolviendo conflictos si procede
+  - Modificamos el package.json para añadir la coletilla "+local" a la versión, para facilitar las pruebas
+- En terria:
+  - Actualizamos la versión del package.json para usar la versión nueva
+  - Para actualizar las dependencias de cesium y demás: yarn gulp sync-terriajs-dependencies
+  - Instalamos todo con un: yarn install --check-files
+  - Levantamos la aplicación y probamos que está todo en orden
+- En terriajs
+  - Subimos a una rama de la forma edatos-x.y.z, la actualización
+- En terria:
+  - Actualizamos la versión del package.json para apuntar al git
+  - Instalamos todo con un: yarn install --check-files
+  - Levantamos la aplicación y probamos que está todo en orden
