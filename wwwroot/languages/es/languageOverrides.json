@@ -434,6 +434,8 @@
     "userDrawing": {
       "messageHeader": "Dibujar en el mapa",
       "clickToAddFirstPoint": "Haga click para añadir un punto",
+      "clickToAddAnotherPoint": "Haga click para añadir otro punto",
+      "btnDone": "Hecho",
       "btnCancel": "Cancelar"
     },
     "mapboxVectorTile": {
@@ -472,5 +474,32 @@
   "mapNavigation": {
     "additionalToolsTitle": "Abrir herramientas adicionales",
     "additionalTools": "Herramientas adicionales"
+  },
+  "workbench": {
+    "label": "Datasets",
+    "opacity": "Opacidad: {{opacity}}%",
+    "zoomToTitle": "Zoom a la extensión",
+    "expandAll": "Ampliar Todo",
+    "collapseAll": "Colapsar Todo"
+  },
+  "emptyWorkbench": {
+    "helpfulHintsOne": "Busque los datos disponibles seleccionando \"Explorar los datos del mapa\" o haga clic en \"Subir\" para añadir sus propios datos al mapa.",
+    "helpfulHintsThree": "En el banco de trabajo puede activar y desactivar conjuntos de datos, cambiar su opacidad, activar la comparación en pantalla dividida, cambiar estilos y navegar por fechas y horas, si los datos admiten esta funcionalidad."
+  },
+  "story": {
+    "collapse": "Colapsar",
+    "removeAllStories": "Eliminar Todas",
+    "removeAllStoriesDialog": "¿Está seguro de que desea eliminar {{ count }} escena?",
+    "removeAllStoriesDialog_plural": "¿Está seguro de que desea eliminar las {{ count }} escenas?"
+  },
+  "featureInfo": {
+    "clickToAddData": "Pinche '$t(addData.addDataBtnText)' para añadir datos al mapa."
+  },
+  "pedestrianMode": {
+    "toolButtonTitle": "Modo Peatón",
+    "dropPedestrianTooltipMessage": "<b>Click izquierdo</b> para seleccionar<br /><b>Click derecho / Esc</b> para cancelar",
+    "controls": {
+      "title": "Controles"
+    }
   }
 }

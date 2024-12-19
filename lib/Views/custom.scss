@@ -29,6 +29,19 @@
     z-index: $notification-window-z-index;
   }
 
+  .tjs-feature-info-download__icon--download {
+    margin-left: 10px;
+  }
+
+  .tjs-standard-user-interface__showWorkbenchButton {
+    top: 60px;
+  }
+
+  .tjs-standard-user-interface__ui-root
+    div[class*="MouseTooltip__TooltipText"] {
+    transform: translateY(-50px);
+  }
+
   @media (max-width: 768px) {
     .tjs-mobile-header__ui {
       position: absolute;
