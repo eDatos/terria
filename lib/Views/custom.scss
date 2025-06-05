@@ -1,6 +1,6 @@
 @use "../Styles/variables.scss";
 
-:global { 
+:global {
   /* eDatos navbar adaptation */
   #ui {
     height: 100%;
@@ -9,15 +9,17 @@
   }
 
   .tjs-standard-user-interface__ui-root,
-  .tjs-standard-user-interface__uiInner,
-  .tjs-standard-user-interface__uiInner > div,
   .tjs-standard-user-interface__uiInner > section,
   #workflow-panel-portal {
     height: 100%;
   }
 
-  .tjs-standard-user-interface__ui-root,
-  .tjs-standard-user-interface__uiInner {
+  .tjs-standard-user-interface__uiInner
+    [class^="WorkflowPanelPortal__Container"] {
+    bottom: 0;
+  }
+
+  .tjs-standard-user-interface__ui-root {
     position: relative;
   }
 
@@ -28,7 +30,6 @@
 
   .tjs-map-interaction-window__window {
     position: absolute;
-    z-index: $notification-window-z-index;
   }
 
   .tjs-feature-info-download__icon--download {
@@ -51,10 +52,6 @@
 
     .tjs-mobile-modal-window__mobileModal {
       z-index: 1;
-    }
-
-    .tjs-standard-user-interface__uiInner > div {
-      height: $mobile-header-height;
     }
 
     .tjs-standard-user-interface__uiInner > section {
