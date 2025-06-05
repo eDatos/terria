@@ -115,5 +115,43 @@
   "helpContentTerm8": {
     "term": "estilo de vista previa",
     "content": "La forma en que el conjunto de datos aparece en la ventana de vista previa. Recomendamos color verdadero para buscar imágenes sin nubes"
-  }
+  },
+  "viewModels": {
+    "searchMinCharacters": "Necesita introducir al menos {{count}} carácter",
+    "searchMinCharacters_plural": "Necesita introducir al menos {{count}} caracteres"
+  },
+  "story": {
+    "removeAllStoriesDialog_plural": "¿Está seguro de que desea eliminar las {{ count }} escenas?"
+  },
+  "workbench": {
+    "disableAll": "Deshabilitar Todos",
+    "enableAll": "Habilitar Todos"
+  },
+  "emptyWorkbenchInfo": [
+    {
+      "heading": "Agrega un conjunto de datos aquí",
+      "body": "Cuando agregues un conjunto de datos, su leyenda y configuraciones aparecerán aquí."
+    },
+    {
+      "heading": "Comienza",
+      "list": [
+        "Haz clic en Explorar los datos del mapa para ver los conjuntos de datos disponibles",
+        "Carga tus propios conjuntos de datos mediante el botón Subir",
+        "Encuentra tus datos agregados en este panel"
+      ]
+    },
+    {
+      "heading": "Lo que puedes hacer",
+      "list": [
+        "Mostrar u ocultar datos",
+        "Ajustar la transparencia (opacidad)",
+        "Comparar lado a lado",
+        "Cambiar estilos (colores, líneas, símbolos)",
+        "Ver diferentes fechas y horas (si los datos lo soportan)"
+      ]
+    },
+    {
+      "body": "Usa este panel para explorar datos, gestionar configuraciones y construir tu escena o historia en el mapa."
+    }
+  ]
 }
