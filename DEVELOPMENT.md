@@ -37,16 +37,32 @@ Como indica el yarn install, para levantar en local se hace con un yarn gulp dev
 El proceso se resume en
 
 - En terriajs (que estará dentro del packages de terria):
-  - Hacer un merge del tag al que queremos actualizar, resolviendo conflictos si procede
-  - Modificamos el package.json para añadir la coletilla "+local" a la versión, para facilitar las pruebas
+  - Creamos rama edatos-x.y.z a partir de master
+  - Hacer un merge del tag de terriajs desde el que que queremos actualizar hasta la rama edatos-x.y.z, resolviendo conflictos si procede
+  - Modificamos el package.json para añadir la coletilla "+local" a la versión, para facilitar las pruebas. Por ejemplo: "8.7.2+local"
 - En terria:
   - Actualizamos la versión del package.json para usar la versión nueva
-  - Para actualizar las dependencias de cesium y demás: yarn gulp sync-terriajs-dependencies
+  - Para actualizar las dependencias de cesium y demás: yarn gulp sync-terriajs-dependencies. Lo hacemos antes de borrar la dependencia o la tarea no existirá
+  - Borrar la carpeta mediante un rm -R node_modules/terriajs
   - Instalamos todo con un: yarn install --check-files
-  - Levantamos la aplicación y probamos que está todo en orden
+  - Levantamos la aplicación con _yarn gulp dev_ y probamos que está todo en orden
+  - Hacer un merge del tag (esta vez, de terria) al que queremos actualizar, resolviendo conflictos si procede y repetimos el proceso de sincronizar
 - En terriajs
   - Subimos a una rama de la forma edatos-x.y.z, la actualización
 - En terria:
   - Actualizamos la versión del package.json para apuntar al git
   - Instalamos todo con un: yarn install --check-files
   - Levantamos la aplicación y probamos que está todo en orden
+  - Limpiamos estilos añadidos adicionales si se puede (custom.scss)
+  - Limpiamos cadenas innecesarias en languageOverrides.json si se puede
+
+Si resumimos aún más podríamos actualizar terriajs y terriamap, pero corremos el riesgo de encontrar errores y no saber de donde vienen.
+
+# Para añadir cadenas de traducción
+
+Cuando tenemos una cadena sin traducción debemos:
+
+- 1. Si la cadena no está internacionalizada, no es habitual, internacionalizarla, y poner issue/pull request en terria
+- 2. Si la cadena está internacionalizada:
+  - 2.1) Añadirla en wwwroot\languages\es\languageOverrides.json
+  - 2.2) Añadirla en https://hosted.weblate.org/translate/terriajs/terriajsnext/es/ para que esté disponible en futuras versiones de Terria
