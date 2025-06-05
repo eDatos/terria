@@ -1,3 +1,4 @@
+@forward "./variables-overrides";
 @use "./variables-overrides" as variables;
 
 $focus-border-light-color: variables.$text-light;

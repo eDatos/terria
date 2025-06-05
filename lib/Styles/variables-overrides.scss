@@ -1,4 +1,25 @@
-@forward "~terriajs/lib/Sass/common/_default_variables.scss"; 
+@forward "~terriajs/lib/Sass/common/_default_variables.scss" with (
+  $logo-height: 70px,
+
+  $font-pop: (
+    "Open Sans",
+    sans-serif
+  ),
+  $font-base: (
+    "Open Sans",
+    sans-serif
+  ),
+  $color-primary: #519ac2,
+  $color-secondary: #06ccff,
+
+  $dark: #3f4854,
+  $dark-with-overlay: #667080,
+  $dark-lighter: #595b60,
+
+  $grey: #888888,
+  $grey-lighter: #ddd
+);
+// @import './OpenSans.scss', 'Lato.scss';
 /**
 // To customise the look of your map, uncomment and change values here and in lib/Views/global.scss
 

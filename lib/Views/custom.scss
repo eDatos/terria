@@ -1,4 +1,6 @@
-:global {
+@use "../Styles/variables.scss";
+
+:global { 
   /* eDatos navbar adaptation */
   #ui {
     height: 100%;
@@ -56,7 +58,7 @@
     }
 
     .tjs-standard-user-interface__uiInner > section {
-      height: calc(100% - $mobile-header-height);
+      height: calc(100% - variables.$mobile-header-height);
     }
   }
 }
