@@ -14,9 +14,20 @@
     height: 100%;
   }
 
-  .tjs-standard-user-interface__uiInner
+  .tjs-sc-InnerPanel.tjs-setting-panel__dropdown-inner.tjs-panel__is-open {
+    opacity: 80%;
+  }
+
+  .tjs-standard-user-interface__uiInner {
     [class*="WorkflowPanelPortal__Container"] {
-    bottom: 0;
+      bottom: 0;
+    }
+    [class*="SidePanel___StyledDiv"] [class*="Button__StyledButton"] {
+      background: variables.$dark;
+    }
+    [class*="SidePanel__BoxHelpfulHints"] {
+      color: variables.$text-light;
+    }
   }
 
   .tjs-standard-user-interface__map {
