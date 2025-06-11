@@ -15,8 +15,17 @@
   }
 
   .tjs-standard-user-interface__uiInner
-    [class^="WorkflowPanelPortal__Container"] {
+    [class*="WorkflowPanelPortal__Container"] {
     bottom: 0;
+  }
+
+  .tjs-standard-user-interface__map {
+    [class*="ZoomControl__StyledZoomControl"] svg,
+    [class*="MapIconButton"] svg,
+    [class*="Compass__StyledCompassRotationMarker"] svg,
+    [class*="Compass__StyledCompassInnerRing"] svg {
+      fill: variables.$text-light;
+    }
   }
 
   .tjs-standard-user-interface__ui-root {
