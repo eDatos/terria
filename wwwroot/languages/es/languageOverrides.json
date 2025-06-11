@@ -153,5 +153,8 @@
     {
       "body": "Usa este panel para explorar datos, gestionar configuraciones y construir tu escena o historia en el mapa."
     }
-  ]
+  ],
+  "addData": {
+    "addDataBtnText": "Explorar datos"
+  }
 }
