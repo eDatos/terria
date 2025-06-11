@@ -1,3 +1,25 @@
+$edatos-color-dark-blue-10: #ccdae4;
+$edatos-color-accent-100: #004678;
+$edatos-color-orange-100: #e95000;
+$edatos-color-primary-50: #4d7ea0;
+
+$edatos-color-black-100: #000000;
+$edatos-color-light-blue-100: #009bd7;
+
+$edatos-color-dark-blue-100: #004678;
+$edatos-color-dark-blue-50: #4d7ea0;
+$edatos-color-dark-blue-25: #99b5c9;
+
+$edatos-color-gray-80: #333333;
+$edatos-color-gray-60: #666666;
+$edatos-color-gray-40: #999999;
+$edatos-color-gray-20: #cccccc;
+$edatos-color-gray-5: #f2f2f2;
+
+$edatos-color-orange-100: #e95000;
+$edatos-color-yellow-100: #f0a82d;
+$edatos-color-yellow-50: #f6cb81;
+
 @forward "~terriajs/lib/Sass/common/_default_variables.scss" with (
   $logo-height: 70px,
 
@@ -9,16 +31,36 @@
     "Open Sans",
     sans-serif
   ),
-  $color-primary: #519ac2,
-  $color-secondary: #06ccff,
+  $color-primary: $edatos-color-light-blue-100,
+  $color-primary-disabled: $edatos-color-gray-60,
 
-  $dark: #3f4854,
-  $dark-with-overlay: #667080,
-  $dark-lighter: #595b60,
+  $color-secondary: $edatos-color-orange-100,
 
-  $grey: #888888,
-  $grey-lighter: #ddd
+  $dark: $edatos-color-dark-blue-100,
+  $dark-with-overlay: $edatos-color-dark-blue-100,
+  $dark-mid: $edatos-color-dark-blue-50,
+  $dark-lighter: $edatos-color-dark-blue-25,
+
+  $grey: $edatos-color-gray-60,
+  $grey-lighter: $edatos-color-gray-40,
+  $grey-lighter2: $edatos-color-gray-20,
+  $grey-lightest: $edatos-color-gray-5,
+
+  $text-black: $edatos-color-black-100,
+  $text-dark: $edatos-color-gray-80,
+  $text-dark2: $edatos-color-gray-40,
+  $text-darker: $edatos-color-gray-60,
+  $text-light: $edatos-color-gray-5,
+  $text-light-dimmed: $edatos-color-gray-20,
+
+  $faint-bg: $edatos-color-gray-5,
+  $warning: $edatos-color-orange-100,
+  $info-color: $edatos-color-yellow-50
 );
+
+/*
+
+
 // @import './OpenSans.scss', 'Lato.scss';
 /**
 // To customise the look of your map, uncomment and change values here and in lib/Views/global.scss
