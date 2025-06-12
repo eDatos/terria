@@ -156,5 +156,8 @@
   ],
   "addData": {
     "addDataBtnText": "Explorar datos"
+  },
+  "pelias": {
+    "searchLocations": "Localizaciones de la API de georreferenciación estadística"
   }
 }
