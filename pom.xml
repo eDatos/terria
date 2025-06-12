@@ -17,8 +17,8 @@
 		<!--MVN -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
 		<frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
-		<yarn.version>v1.22.10</yarn.version>
-		<node.version>v18.19.1</node.version>
+		<yarn.version>v1.22.22</yarn.version>
+		<node.version>v22.16.0</node.version>
 	</properties>
 
 	<build>
