@@ -24,6 +24,9 @@
     }
     [class*="SidePanel___StyledDiv"] [class*="Button__StyledButton"] {
       background: variables.$dark;
+      &:hover {
+        background: variables.$color-primary;
+      }
     }
     [class*="SidePanel__BoxHelpfulHints"] {
       color: variables.$text-light;
