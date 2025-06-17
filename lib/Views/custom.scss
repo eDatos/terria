@@ -33,6 +33,8 @@
     }
   }
 
+  .tjs-story-editor__field::placeholder {
+    color: variables.$text-light-dimmed;
   }
 
   .tjs-standard-user-interface__ui-root {
