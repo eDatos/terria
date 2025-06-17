@@ -102,20 +102,20 @@
     "searchBarConfig": {},
     "searchProviders": [
       {
-        "id": "search-provider/cesium-ion",
-        "type": "cesium-ion-search-provider",
-        "name": "translate#viewModels.searchLocations",
-        "flightDurationSeconds": 1.5,
-        "minCharacters": 3        
-      },
-      {
         "id": "search-provider/pelias",
         "type": "pelias-search-provider",
         "url": "https://datos.canarias.es/api/estadisticas/georref/api/v1/search",
         // "url": "https://estadisticas.arte-consultores.com/pelias/api/v1/search",
         "name": "translate#pelias.searchLocations",
         "flightDurationSeconds": 1.5,
-        "minCharacters": 3        
+        "minCharacters": 3
+      },
+      {
+        "id": "search-provider/cesium-ion",
+        "type": "cesium-ion-search-provider",
+        "name": "translate#viewModels.searchLocations",
+        "flightDurationSeconds": 1.5,
+        "minCharacters": 3
       }
     ],
     "helpContent": [
