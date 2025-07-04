@@ -15,12 +15,6 @@
 ###
 FROM nginx:alpine
 
-# Crea el directorio para la ruta /terria en NGINX
-RUN mkdir -p /usr/share/nginx/html/terria
-
-COPY ./wwwroot /usr/share/nginx/html/terria
-
-# Copia una configuración personalizada de NGINX
-COPY ./dockerfiles/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./wwwroot /usr/share/nginx/html
 
 EXPOSE 80
