@@ -1,5 +1,5 @@
 ###
-# Dockerfile usado para consutruir la imagen del terria
+# Dockerfile usado para construir la imagen del terria
 #
 # Antes de construir la imagen debemos haber compilado previamente el proyecto (desde el directorio raíz):
 #
