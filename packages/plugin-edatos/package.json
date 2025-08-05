@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "prepare": "rollup -c rollup.config.ts",
   "dependencies": {
-    "terriajs-plugin-api": "0.0.1-alpha.16"
+    "terriajs-plugin-api": "0.0.1-alpha.17"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.2",
