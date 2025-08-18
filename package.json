@@ -81,6 +81,7 @@
     "terriajs-cesium": "8.0.2",
     "terriajs-plugin-api": "0.0.1-alpha.17",
     "terriajs-plugin-sample": "0.0.1-alpha.7",
+    "terriajs-plugin-edatos": "0.0.1",
     "typescript": "^5.7.3",
     "urijs": "^1.18.12",
     "webpack": "^5.96.1",
