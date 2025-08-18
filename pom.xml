@@ -102,19 +102,19 @@
 
 	<issueManagement>
 		<system>Jira</system>
-		<url>http://jira.arte-consultores.com/browse/TERRIA</url>
+		<url>https://jira.arte.dev/browse/EDATOS</url>
 	</issueManagement>
 
 	<distributionManagement>
 		<repository>
 			<id>arte.releases.http</id>
 			<name>Arte Repository - RELEASE</name>
-			<url>http://repository.arte-consultores.com/content/repositories/releases</url>
+			<url>https://repository.arte-consultores.com/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>arte.snapshot.http</id>
 			<name>Arte Repository - SNAPSHOT</name>
-			<url>http://repository.arte-consultores.com/content/repositories/snapshots</url>
+			<url>https://repository.arte-consultores.com/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
