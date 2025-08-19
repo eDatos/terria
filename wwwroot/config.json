@@ -36,7 +36,7 @@
       "changeLanguageOnStartWhen": ["cookie"],
       "lookupCookie": "chosenLocale"
     },
-    "bingMapsKey": "ApzG8h1sQqyEW-bdAWhNQ8g3ZVfxX_q5HsepUWacOJXXQmCYzkm2Np3ydSQrqrtO",
+    "useCesiumIonBingImagery": true,
     "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZDY5MDE1YS0yNGFlLTQ1MzctYWNkNy0wNDQ1YWNiNTM5MDIiLCJpZCI6Mjk5Miwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzODAzMzgyNn0.a2uTotdiHUo8FiHsO4MVNZ1KT5pOF0rb7CFdwbRAsOo",
     "edatosTerriaApiKey": "2ZFagmNwbsd580TTg0xgtxSQW7wDsRV1EQj0VJ0Upg3JgoKLZ9jdPZ4x191kVq76",
 
