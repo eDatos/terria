@@ -6,12 +6,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-  }
 
-  .tjs-standard-user-interface__ui-root,
-  .tjs-standard-user-interface__uiInner > section,
-  #workflow-panel-portal {
-    height: 100%;
+    .tjs-standard-user-interface__ui-root,
+    .tjs-standard-user-interface__uiInner > section,
+    #workflow-panel-portal {
+      height: 100%;
+    }
   }
 
   .tjs-sc-InnerPanel.tjs-setting-panel__dropdown-inner.tjs-panel__is-open {
