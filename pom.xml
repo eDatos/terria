@@ -46,7 +46,7 @@
 						<configuration>
 							<!-- optional: The default argument is actually
 							"install", but let's be explicit -->
-							<arguments>install --child-concurrency 1</arguments>
+							<arguments>install --child-concurrency 1 --network-concurrency 1</arguments>
 						</configuration>
 					</execution>
 					<execution>
