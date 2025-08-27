@@ -38,6 +38,12 @@
     .tjs-standard-user-interface__showWorkbenchButton {
       top: 60px;
     }
+    .tjs-add-data__url-input {
+      display: flex;
+      .tjs-add-data__url-input__btn {
+        width: fit-content;
+      }
+    }
   }
 
   .tjs-story-editor__field::placeholder {
