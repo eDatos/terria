@@ -31,6 +31,10 @@
     [class*="SidePanel__BoxHelpfulHints"] {
       color: variables.$text-light;
     }
+    [class*="Button__RawButton"] svg {
+      padding-right: 4px;
+    }
+
     .tjs-standard-user-interface__showWorkbenchButton {
       top: 60px;
     }
