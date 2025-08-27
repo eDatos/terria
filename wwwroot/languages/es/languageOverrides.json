@@ -155,7 +155,11 @@
     }
   ],
   "addData": {
-    "addDataBtnText": "Explorar datos"
+    "addDataBtnText": "Explorar datos",
+    "localFileType": "<0>Paso 1:</0> Seleccionar tipo de archivo",
+    "localFile": "<0>Paso 2:</0> Seleccionar archivo",
+    "webFileType": "<0>Paso 1:</0> Seleccione el tipo de archivo o servicio web",
+    "webFile": "<0>Paso 2:</0> Introduzca la URL del archivo de datos o del servicio web"
   },
   "pelias": {
     "searchLocations": "Localizaciones de la API de georreferenciación estadística"
