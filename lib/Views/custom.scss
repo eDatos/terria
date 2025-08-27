@@ -31,6 +31,9 @@
     [class*="SidePanel__BoxHelpfulHints"] {
       color: variables.$text-light;
     }
+    .tjs-standard-user-interface__showWorkbenchButton {
+      top: 60px;
+    }
   }
 
   .tjs-story-editor__field::placeholder {
@@ -52,10 +55,6 @@
 
   .tjs-feature-info-download__icon--download {
     margin-left: 10px;
-  }
-
-  .tjs-standard-user-interface__showWorkbenchButton {
-    top: 60px;
   }
 
   .tjs-standard-user-interface__ui-root
