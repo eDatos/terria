@@ -10101,9 +10101,9 @@ terriajs-typings-for-css-modules-loader@^2.5.2:
   optionalDependencies:
     prettier "*"
 
-"terriajs@https://github.com/Edatos/terriajs.git#edatos-8.10.0+202508221356":
+"terriajs@https://github.com/Edatos/terriajs.git#edatos-8.10.0+202508271154":
   version "8.10.0"
-  resolved "https://github.com/Edatos/terriajs.git#f5f31ca244d78b2fa250ceb68639453018a3791d"
+  resolved "https://github.com/Edatos/terriajs.git#4ac5cdee9484edb6e8dbd364728120df52d17fa0"
   dependencies:
     "@babel/core" "^7.28.0"
     "@babel/plugin-proposal-decorators" "^7.28.0"

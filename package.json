@@ -78,7 +78,7 @@
     "sass-loader": "^16.0.3",
     "style-loader": "^4.0.0",
     "svg-sprite-loader": "^6.0.11",
-    "terriajs": "https://github.com/Edatos/terriajs.git#edatos-8.10.0+202508221356",
+    "terriajs": "https://github.com/Edatos/terriajs.git#edatos-8.10.0+202508271154",
     "terriajs-cesium": "8.0.2",
     "terriajs-plugin-api": "0.0.1-alpha.17",
     "terriajs-plugin-sample": "0.0.1-alpha.7",
