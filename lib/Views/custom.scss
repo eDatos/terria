@@ -31,8 +31,18 @@
     [class*="SidePanel__BoxHelpfulHints"] {
       color: variables.$text-light;
     }
-    [class*="Button__RawButton"] svg {
-      padding-right: 4px;
+
+    [class*="BadgeBar___StyledBox2"] [class*="Button__RawButton"] {
+      svg {
+        padding-right: 4px;
+      }
+      &:nth-child(2) svg {
+        width: 18px;
+        padding-right: 0px;
+      }
+      [class*="Text__TextSpan"] {
+        font-size: 11px;
+      }
     }
 
     .tjs-standard-user-interface__showWorkbenchButton {
