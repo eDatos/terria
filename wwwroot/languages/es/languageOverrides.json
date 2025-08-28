@@ -164,7 +164,7 @@
   "pelias": {
     "searchLocations": "Localizaciones de la API de georreferenciación estadística"
   },
-  "model": {
+  "models": {
     "raiseError": {
       "notificationFeedbackEmail": "Para preguntas y comentarios, por favor contáctenos en {{email}}"
     }
