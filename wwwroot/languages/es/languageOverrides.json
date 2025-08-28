@@ -163,5 +163,13 @@
   },
   "pelias": {
     "searchLocations": "Localizaciones de la API de georreferenciación estadística"
+  },
+  "model": {
+    "raiseError": {
+      "notificationFeedbackEmail": "Para preguntas y comentarios, por favor contáctenos en {{email}}"
+    }
+  },
+  "location": {
+    "permissionDenied": "Permiso denegado para obtener tu localización. Por favor, revisa la configuración de tu navegador."
   }
 }
