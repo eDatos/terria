@@ -164,7 +164,7 @@ gulp.task("copy-terriajs-assets", function () {
   var destPath = path.resolve(__dirname, "wwwroot", "build", "TerriaJS");
 
   return gulp
-    .src([sourceGlob], { base: terriaWebRoot })
+    .src([sourceGlob], { base: terriaWebRoot, encoding: false })
     .pipe(gulp.dest(destPath));
 });
 
@@ -186,12 +186,9 @@ gulp.task(
 
 gulp.task("lint", function (done) {
   var runExternalModule = require("terriajs/buildprocess/runExternalModule");
-
-  runExternalModule("eslint/bin/eslint.js", [
-    "-c",
-    path.join(getPackageRoot("terriajs"), ".eslintrc"),
-    "--ignore-pattern",
-    "lib/ThirdParty",
+  const eslintDir = path.dirname(require.resolve("eslint/package.json"));
+  const eslintExecutable = path.join(eslintDir, "bin", "eslint.js");
+  runExternalModule(eslintExecutable, [
     "--max-warnings",
     "0",
     "index.js",

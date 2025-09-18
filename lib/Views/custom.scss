@@ -1,21 +1,66 @@
+@use "../Styles/variables.scss";
+
 :global {
   /* eDatos navbar adaptation */
   #ui {
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    .tjs-standard-user-interface__ui-root,
+    .tjs-standard-user-interface__uiInner > section,
+    #workflow-panel-portal {
+      height: 100%;
+    }
   }
 
-  .tjs-standard-user-interface__ui-root,
-  .tjs-standard-user-interface__uiInner,
-  .tjs-standard-user-interface__uiInner > div,
-  .tjs-standard-user-interface__uiInner > section,
-  #workflow-panel-portal {
-    height: 100%;
+  .tjs-sc-InnerPanel.tjs-setting-panel__dropdown-inner.tjs-panel__is-open {
+    opacity: 80%;
   }
 
-  .tjs-standard-user-interface__ui-root,
   .tjs-standard-user-interface__uiInner {
+    [class*="WorkflowPanelPortal__Container"] {
+      bottom: 0;
+    }
+    [class*="SidePanel___StyledDiv"] [class*="Button__StyledButton"] {
+      background: variables.$dark;
+      &:hover {
+        background: variables.$color-primary;
+      }
+    }
+    [class*="SidePanel__BoxHelpfulHints"] {
+      color: variables.$text-light;
+    }
+
+    [class*="BadgeBar___StyledBox2"] [class*="Button__RawButton"] {
+      svg {
+        padding-right: 4px;
+      }
+      &:nth-child(2) svg {
+        width: 18px;
+        padding-right: 0px;
+      }
+      [class*="Text__TextSpan"] {
+        font-size: 11px;
+      }
+    }
+
+    .tjs-standard-user-interface__showWorkbenchButton {
+      top: 60px;
+    }
+    .tjs-add-data__url-input {
+      display: flex;
+      .tjs-add-data__url-input__btn {
+        width: fit-content;
+      }
+    }
+  }
+
+  .tjs-story-editor__field::placeholder {
+    color: variables.$text-light-dimmed;
+  }
+
+  .tjs-standard-user-interface__ui-root {
     position: relative;
   }
 
@@ -26,15 +71,10 @@
 
   .tjs-map-interaction-window__window {
     position: absolute;
-    z-index: $notification-window-z-index;
   }
 
   .tjs-feature-info-download__icon--download {
     margin-left: 10px;
-  }
-
-  .tjs-standard-user-interface__showWorkbenchButton {
-    top: 60px;
   }
 
   .tjs-standard-user-interface__ui-root
@@ -51,12 +91,8 @@
       z-index: 1;
     }
 
-    .tjs-standard-user-interface__uiInner > div {
-      height: $mobile-header-height;
-    }
-
     .tjs-standard-user-interface__uiInner > section {
-      height: calc(100% - $mobile-header-height);
+      height: calc(100% - variables.$mobile-header-height);
     }
   }
 }

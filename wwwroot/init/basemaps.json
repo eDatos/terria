@@ -35,27 +35,13 @@
           "id": "basemap-bing-roads"
         },
         "image": "images/bing-maps-roads.png"
-      },
-      {
-        "item": {
-          "id": "basemap-positron"
-        },
-        "image": "images/positron-light.png"
-      },
-      {
-        "item": {
-          "id": "basemap-darkmatter"
-        },
-        "image": "images/dark-matter.png"
       }
     ],
     "enabledBaseMaps": [
       "istac-base",
-      "basemap-darkmatter",
       "basemap-bing-aerial-with-labels",
       "basemap-bing-aerial",
-      "basemap-bing-roads",
-      "basemap-positron"
+      "basemap-bing-roads"
     ],
     "defaultBaseMapId": "istac-base"
   }

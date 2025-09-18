@@ -1,0 +1,89 @@
+$edatos-color-dark-blue-10: #ccdae4;
+$edatos-color-accent-100: #004678;
+$edatos-color-orange-100: #e95000;
+$edatos-color-primary-50: #4d7ea0;
+
+$edatos-color-black-100: #000000;
+$edatos-color-light-blue-100: #009bd7;
+
+$edatos-color-dark-blue-100: #004678;
+$edatos-color-dark-blue-50: #4d7ea0;
+$edatos-color-dark-blue-25: #99b5c9;
+
+$edatos-color-gray-80: #333333;
+$edatos-color-gray-60: #666666;
+$edatos-color-gray-40: #999999;
+$edatos-color-gray-20: #cccccc;
+$edatos-color-gray-5: #f2f2f2;
+
+$edatos-color-orange-100: #e95000;
+$edatos-color-yellow-100: #f0a82d;
+$edatos-color-yellow-50: #f6cb81;
+
+@forward "~terriajs/lib/Sass/common/_default_variables.scss" with (
+  $logo-height: 70px,
+
+  $font-pop: (
+    "Open Sans",
+    sans-serif
+  ),
+  $font-base: (
+    "Open Sans",
+    sans-serif
+  ),
+  $color-primary: $edatos-color-light-blue-100,
+  $color-primary-disabled: $edatos-color-gray-60,
+
+  $color-secondary: $edatos-color-orange-100,
+
+  $dark: $edatos-color-dark-blue-100,
+  $dark-with-overlay: $edatos-color-dark-blue-100,
+  $dark-mid: $edatos-color-dark-blue-50,
+  $dark-lighter: $edatos-color-dark-blue-25,
+
+  $grey: $edatos-color-gray-40,
+  $grey-lightest: $edatos-color-gray-5,
+
+  $text-black: $edatos-color-black-100,
+  $text-dark: $edatos-color-gray-80,
+  $text-dark2: $edatos-color-gray-40,
+  $text-darker: $edatos-color-gray-60,
+  $text-light: $edatos-color-gray-5,
+  $text-light-dimmed: $edatos-color-gray-20,
+
+  $faint-bg: $edatos-color-gray-5,
+  $warning: $edatos-color-orange-100,
+  $info-color: $edatos-color-yellow-50
+);
+
+/*
+
+
+// @import './OpenSans.scss', 'Lato.scss';
+/**
+// To customise the look of your map, uncomment and change values here (remove line above after uncommenting) and in lib/Views/global.scss
+
+@forward "~terriajs/lib/Sass/common/_default_variables.scss" with ( 
+    // If your logo is big, set this to give it more room.
+    //$logo-height: 120px;
+    
+    // If using a non-standard font, remember to include an @import statement in global.scss
+    $font-base: 'Josefin Sans', sans-serif;
+    $font-pop: $font-base; // If you just want to use one font throughout, do this.
+    
+    // These variables are for buttons and text.
+    // "color-secondary" should be a lighter color than "color-primary" but still readable contrasted with white.
+    $color-primary: maroon;
+    $color-secondary: hsl(60,80%,60%); // or: lighten($color-primary, 20%);
+    
+    // These variables set background panel colors
+    $dark: hsl(0,30%,30%);
+    $dark-with-overlay: hsl(0,30%,30%);;
+    $dark-lighter: hsl(0,30%,50%);
+    
+    // You might find it helpful to define these and use them.
+    $color-primary-light:lighten($color-primary,10%);
+    $color-primary-dark:darken($color-primary,10%);
+    $dark-darker: hsl(0,30%,15%);
+);
+*/
