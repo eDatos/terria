@@ -12,7 +12,7 @@ _Se deberá realizar primero la actualización de la versión 1.0.0 a la 2.0.0 y
 
 ### Breaking changes
 
-- Sube la versión de Terria (7.11.16 a 8.7.2). Dado que Terria permite la existencia de enlaces guardados con configuración dependiente de la versión, esto es un breaking change.
+- Sube la versión de Terria (7.11.16 a 8.10.0). Dado que Terria permite la existencia de enlaces guardados con configuración dependiente de la versión, esto es un breaking change.
 - Cambia tanto la configuración como los catálogos
   - El modo de actualizar los catálogos es con el comando catalog-converter (https://github.com/TerriaJS/catalog-converter). Ejemplo: catalog-converter wwwroot/init/v7erupcion-volcanica-la-palma.json wwwroot/init/erupcion-volcanica-la-palma.json
 - Cambios relevantes para el proyecto es que se deprecan los WMS con region mapping
