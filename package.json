@@ -91,7 +91,6 @@
     "yargs": "^17.7.2"
   },
   "scripts": {
-    "prepare": "husky install",
     "docker-build-local": "node deploy/docker/create-docker-context.js --build --push --tag auto --local",
     "docker-build-prod": "node deploy/docker/create-docker-context.js --build --push --tag auto --repository=ghcr.io/terriajs",
     "docker-build-ci": "node deploy/docker/create-docker-context.js --build",
