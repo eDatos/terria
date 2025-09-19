@@ -1,122 +1,152 @@
-'use strict';
+const configureWebpackForTerriaJS = require("terriajs/buildprocess/configureWebpack");
+const configureWebpackForPlugins = require("./configureWebpackForPlugins");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
-/*global require*/
-var configureWebpackForTerriaJS = require('terriajs/buildprocess/configureWebpack');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var path = require('path');
+/**
+ * Webpack config for building terriamap
+ */
+module.exports = function (devMode) {
+  // Base configuration
+  const config = {
+    mode: devMode ? "development" : "production",
+    entry: "./entry.js",
+    output: {
+      path: path.resolve(__dirname, "..", "wwwroot", "build"),
+      filename: "TerriaMap.js",
+      publicPath: "build/",
+      sourcePrefix: "", // to avoid breaking multi-line string literals by inserting extra tabs.
+      globalObject: "(self || window)" // to avoid breaking in web worker (https://github.com/webpack/webpack/issues/6642)
+    },
+    devtool: devMode ? "eval-cheap-module-source-map" : false,
 
-module.exports = function(devMode, hot) {
-    var config = {
-        mode: devMode ? 'development' : 'production',
-        entry: './entry.js',
-        output: {
-            path: path.resolve(__dirname, '..', 'wwwroot', 'build'),
-            filename: 'TerriaMap.js',
-            // work around chrome needing the full URL when using sourcemaps (http://stackoverflow.com/questions/34133808/webpack-ots-parsing-error-loading-fonts/34133809#34133809)
-            publicPath: hot ? 'http://localhost:3003/build/' : 'build/',
-            sourcePrefix: '', // to avoid breaking multi-line string literals by inserting extra tabs.
-            globalObject: '(self || window)' // to avoid breaking in web worker (https://github.com/webpack/webpack/issues/6642)
+    module: {
+      // following rules are for terriamap source files
+      // rules for building terriajs are configured in configureWebpackForTerriaJS
+      rules: [
+        // build source files
+        {
+          test: /\.(ts|js)x?$/,
+          include: [
+            path.resolve(__dirname, "..", "index.js"),
+            path.resolve(__dirname, "..", "entry.js"),
+            path.resolve(__dirname, "..", "plugins.ts"),
+            path.resolve(__dirname, "..", "lib")
+          ],
+          use: [
+            {
+              loader: "babel-loader",
+              options: {
+                cacheDirectory: true,
+                presets: [
+                  [
+                    "@babel/preset-env",
+                    {
+                      corejs: 3,
+                      useBuiltIns: "usage"
+                    }
+                  ],
+                  ["@babel/preset-react", { runtime: "automatic" }],
+                  ["@babel/preset-typescript", { allowNamespaces: true }]
+                ],
+                plugins: [
+                  ["@babel/plugin-proposal-decorators", { legacy: true }],
+                  "babel-plugin-styled-components"
+                ]
+              }
+            }
+          ]
         },
-        devtool: devMode ? 'cheap-inline-source-map' : 'source-map',
-        module: {
-            rules: [
-                {
-                    test: /\.html$/,
-                    include: path.resolve(__dirname, '..', 'lib', 'Views'),
-                    loader: 'raw-loader'
+        // import html file as string
+        {
+          test: /\.html$/,
+          include: path.resolve(__dirname, "..", "lib", "Views"),
+          type: "asset/source"
+        },
+        // import images
+        {
+          test: /\.(png|jpg|svg|gif)$/,
+          include: path.resolve(__dirname, "..", "wwwroot", "images"),
+          type: "asset" // inlines as data url if size < 8kb
+        },
+        // import globe.gif
+        {
+          test: /globe\.gif$/,
+          include: path.resolve(__dirname, "..", "lib", "Styles"),
+          type: "asset",
+          parser: {
+            dataUrlCondition: {
+              maxSize: 65536 // < inline as data url if size < 64k
+            }
+          }
+        },
+        // handle scss files
+        {
+          test: /\.scss$/,
+          include: [path.resolve(__dirname, "..", "lib")],
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                // Use default export for css modules as opposed to the more
+                // efficient named exports. This is required because most of
+                // legacy stylesheets in TerriaJS assumes default export style.
+                defaultExport: true
+              }
+            },
+            { loader: "terriajs-typings-for-css-modules-loader" },
+            {
+              loader: "css-loader",
+              options: {
+                sourceMap: true,
+                modules: {
+                  localIdentName: "tjs-[name]__[local]",
+                  exportLocalsConvention: "camelCase"
                 },
-                {
-                    test: /\.(js|jsx)$/,
-                    include: [
-                        path.resolve(__dirname, '..', 'index.js'),
-                        path.resolve(__dirname, '..', 'entry.js'),
-                        path.resolve(__dirname, '..', 'lib')
-                        
-                    ],
-                    loader: 'babel-loader',
-                    options: {
-                        sourceMap: false, // generated sourcemaps are currently bad, see https://phabricator.babeljs.io/T7257
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                        plugins: [
-                            'babel-plugin-jsx-control-statements',
-                            '@babel/plugin-transform-modules-commonjs'
-                        ]
-                    }
-                },
-                {
-                    test: /\.(png|jpg|svg|gif)$/,
-                    include: path.resolve(__dirname, '..', 'wwwroot', 'images'),
-                    loader: 'url-loader',
-                    options: {
-                        limit: 8192
-                    }
-                },
-                {
-                    test: /globe\.gif$/,
-                    include: path.resolve(__dirname, '..', 'lib', 'Styles'),
-                    loader: 'url-loader',
-                    options: {
-                        limit: 65536
-                    }
-                },
-                {
-                    test: /loader\.css$/,
-                    include: [path.resolve(__dirname, '..', 'lib', 'Styles')],
-                    loader: ['style-loader', 'css-loader']
-                },
-                {
-                    test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
-                    include: [path.resolve(__dirname, '..', 'lib', 'fonts')],
-                    loader: "file-loader",
-                },
-                {
-                    test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
-                    include: [path.resolve(__dirname, '..', 'node_modules', 'terriajs', 'lib', 'fonts')],
-                    loader: "file-loader",
-                },
-                {
-                    test: /\.scss$/,
-                    include: [path.resolve(__dirname, '..', 'lib')],
-                    loader: hot ? [
-                        'style-loader',
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                sourceMap: true,
-                                modules: true,
-                                camelCase: true,
-                                localIdentName: 'tm-[name]__[local]',
-                                importLoaders: 2
-                            }
-                        },
-                        'resolve-url-loader?sourceMap',
-                        'sass-loader?sourceMap'
-                    ] : [
-                        MiniCssExtractPlugin.loader,
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                sourceMap: true,
-                                modules: true,
-                                camelCase: true,
-                                localIdentName: 'tm-[name]__[local]',
-                                importLoaders: 2
-                            }
-                        },
-                        'resolve-url-loader?sourceMap',
-                        'sass-loader?sourceMap'
-                    ]
+                importLoaders: 2
+              }
+            },
+            {
+              loader: "resolve-url-loader",
+              options: {
+                sourceMap: false
+              }
+            },
+            {
+              loader: "sass-loader",
+              options: {
+                api: "modern",
+                sassOptions: {
+                  sourceMap: true
                 }
-            ]
-        },
-        plugins: [
-            new MiniCssExtractPlugin({filename: "TerriaMap.css", disable: hot, ignoreOrder: true, allChunks: true})
-        ],
-       resolve: {
-            alias: {},
-            modules: ['node_modules']
+              }
+            }
+          ]
         }
-    };
-    config.resolve.alias['terriajs-variables'] = require.resolve('../lib/Styles/variables.scss');
-    return configureWebpackForTerriaJS(path.dirname(require.resolve('terriajs/package.json')), config, devMode, hot, MiniCssExtractPlugin);
+      ]
+    },
+    plugins: [
+      // Extract SASS styles into a seperate stylesheet
+      new MiniCssExtractPlugin({
+        filename: "TerriaMap.css",
+        ignoreOrder: true
+      })
+    ],
+    resolve: {
+      alias: {},
+      modules: ["node_modules"]
+    }
+  };
+  config.resolve.alias["terriajs-variables"] = require.resolve(
+    "../lib/Styles/variables-overrides.scss"
+  );
+
+  return configureWebpackForPlugins(
+    configureWebpackForTerriaJS({
+      terriaJSBasePath: path.dirname(require.resolve("terriajs/package.json")),
+      config,
+      devMode,
+      MiniCssExtractPlugin
+    })
+  );
 };

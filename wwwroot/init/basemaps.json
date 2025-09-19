@@ -1,0 +1,48 @@
+{
+  "homeCamera": {
+    "north": 30,
+    "east": -13,
+    "south": 27,
+    "west": -19
+  },
+  "baseMaps": {
+    "items": [
+      {
+        "item": {
+          "id": "istac-base",
+          "name": "ISTAC Base",
+          "type": "url-template-imagery",
+          "url": "https://api.mapbox.com/styles/v1/istac/cjucn2je5190f1ft71y0c829a/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaXN0YWMiLCJhIjoiY2p1Y21zenNiMG53MDQ0cGk1OGtzczl1MCJ9.Yp_T9Jf8_bHI2j0FsGXiKw",
+          "opacity": 1.0
+        },
+        "image": "images/istac-base.png"
+      },
+      // Use ids and overwrite from this https://github.com/TerriaJS/terriajs/blob/8.7.4/lib/Models/BaseMaps/defaultBaseMaps.ts
+      {
+        "item": {
+          "id": "basemap-bing-aerial-with-labels"
+        },
+        "image": "images/bing-maps-aerial-labels.png"
+      },
+      {
+        "item": {
+          "id": "basemap-bing-aerial"
+        },
+        "image": "images/bing-maps-aerial.png"
+      },
+      {
+        "item": {
+          "id": "basemap-bing-roads"
+        },
+        "image": "images/bing-maps-roads.png"
+      }
+    ],
+    "enabledBaseMaps": [
+      "istac-base",
+      "basemap-bing-aerial-with-labels",
+      "basemap-bing-aerial",
+      "basemap-bing-roads"
+    ],
+    "defaultBaseMapId": "istac-base"
+  }
+}

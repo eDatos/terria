@@ -1,0 +1,81 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "GFVICq",
+      "type": "group",
+      "name": "Erupción Volcánica La Palma 2021",
+      "members": [
+        {
+          "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
+          "name": "Colada magmática - 21-09-2021 21:33:08",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "isOpenInWorkbench": true,
+          "layers": "mapastematicos:EMSR546_AOI01_GRA_MONIT01_observedEventA_r1_v1",
+          "styles": "polygon",
+          "id": "tV14Cm",
+          "shareKeys": [
+            "Root Group/Erupción Volcánica La Palma 2021/Colada magmática - 21-09-2021 21:33:08"
+          ]
+        },
+        {
+          "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
+          "name": "Viviendas afectadas por la colada - 21-09-2021 21:33:08",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "isOpenInWorkbench": true,
+          "layers": "mapastematicos:EMSR546_AOI01_GRA_MONIT01_builtUpP_r1_v1",
+          "styles": "point",
+          "id": "amDxNi",
+          "shareKeys": [
+            "Root Group/Erupción Volcánica La Palma 2021/Viviendas afectadas por la colada - 21-09-2021 21:33:08"
+          ]
+        },
+        {
+          "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
+          "name": "Colada magmática - 21-09-2021 13:24:22",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "isOpenInWorkbench": true,
+          "layers": "mapastematicos:EMSR546_AOI01_GRA_PRODUCT_observedEventA_r1_v1",
+          "styles": "polygon",
+          "id": "sLFKV7",
+          "shareKeys": [
+            "Root Group/Erupción Volcánica La Palma 2021/Colada magmática - 21-09-2021 13:24:22"
+          ]
+        },
+        {
+          "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
+          "name": "Viviendas afectadas por la colada - 21-09-2021 13:24:22",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "isOpenInWorkbench": true,
+          "layers": "mapastematicos:EMSR546_AOI01_GRA_PRODUCT_builtUpP_r1_v1",
+          "styles": "point",
+          "id": "us7EJH",
+          "shareKeys": [
+            "Root Group/Erupción Volcánica La Palma 2021/Viviendas afectadas por la colada - 21-09-2021 13:24:22"
+          ]
+        }
+      ],
+      "description": "Erupción Volcánica La Palma 2021",
+      "isOpen": true,
+      "shareKeys": ["Root Group/Erupción Volcánica La Palma 2021"]
+    }
+  ],
+  "homeCamera": {
+    "north": 30,
+    "east": -13,
+    "south": 27,
+    "west": -19
+  }
+}

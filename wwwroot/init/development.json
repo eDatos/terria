@@ -1,0 +1,295 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "type": "group",
+      "name": "Ejemplos para desarrollo",
+      "members": [
+        {
+          "name": "Ejemplo de MVT (MapboxVectorTileCatalogItem)",
+          "description": "En el caso de implementar region mapping via MVT, primero montar el MVT a secas como este. Nótese el campo nameProperty que se llama ETIQUETA que alimenta el título del tooltip",
+          "type": "mvt",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/gwc/service/wmts/rest/mapastematicos:municipios_20170101_antes2007/mapastematicos:region_fid/EPSG:3857/EPSG:3857:{z}/{y}/{x}?format=application%2Fvnd.mapbox-vector-tile",
+          "layer": "municipios_20170101_antes2007",
+          "lineColor": "#FF0000",
+          "fillColor": "#DDDDFF",
+          "nameProperty": "ETIQUETA"
+        },
+        {
+          "type": "wms",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true
+          },
+          "name": "Ejemplo de WMS region mapping - Indicadores demográficos. Municipios de Canarias. 01/01/2022",
+          "url": "https://datos.canarias.es/api/estadisticas/geographical-resources/indicadoresdemograficos/wms",
+          "isOpenInWorkbench": true,
+          "layers": "Municipios-20220101",
+          "styles": "",
+          "shareKeys": [
+            "Root Group/Datos estadísticos/Estructura de población de indicadores demográficos/Municipios/Indicadores demográficos. Municipios de Canarias. 01/01/2022"
+          ]
+        },
+        {
+          "name": "Ejemplo de region mapping con MVT",
+          "type": "csv",
+          "url": "data/csv/development/2000-2007_indicadores_demograficos_municipios_pmh.csv",
+          "description": "Ejemplo de region mapping con vector tiles, tal como se recomienda en v8 tras deprecar region mapping con WMS. Obtenidos desde https://datos.canarias.es/catalogos/estadisticas/dataset/fbb1af64-3138-4e85-9e14-cefd796b9461/resource/6b5e71f3-4bc9-4ed4-8367-198875325715/download/2000-2007_indicadores_demograficos_municipios_pmh.csv y descargados para evitar roturas",
+          "opacity": 0.8,
+          "defaultStyle": {
+            "regionColumn": "geocode",
+            "color": {
+              "numberOfBins": 5,
+              "colorPalette": "Oranges"
+            }
+          }
+        },
+        {
+          "name": "Ejemplo de region mapping con MVT (subconjunto)",
+          "type": "csv",
+          "url": "data/csv/development/2000-2007_indicadores_demograficos_municipios_pmh_subconjunto.csv",
+          "description": "Ejemplo de region mapping con vector tiles, tal como se recomienda en v8 tras deprecar region mapping con WMS. Obtenidos desde https://datos.canarias.es/catalogos/estadisticas/dataset/fbb1af64-3138-4e85-9e14-cefd796b9461/resource/6b5e71f3-4bc9-4ed4-8367-198875325715/download/2000-2007_indicadores_demograficos_municipios_pmh.csv y descargados para evitar roturas",
+          "opacity": 0.8,
+          "defaultStyle": {
+            "regionColumn": "geocode",
+            "color": {
+              "numberOfBins": 5,
+              "colorPalette": "Oranges"
+            }
+          }
+        },
+        {
+          "type": "csv",
+          "name": "Ejemplo de region mapping con MVT (otros estilos y configuración). Indicadores demográficos. Municipios antes de 2007",
+          "description": "Obtenidos desde https://datos.canarias.es/catalogos/estadisticas/dataset/fbb1af64-3138-4e85-9e14-cefd796b9461/resource/6b5e71f3-4bc9-4ed4-8367-198875325715/download/2000-2007_indicadores_demograficos_municipios_pmh.csv y descargados para evitar roturas",
+          "url": "data/csv/development/2000-2007_indicadores_demograficos_municipios_pmh.csv",
+          "opacity": 0.8,
+          "initialTimeSource": "start",
+          "columns": [
+            {
+              "name": "geocode",
+              "type": "region"
+            },
+            {
+              "name": "geoparent",
+              "type": "hidden"
+            },
+            {
+              "name": "fecha",
+              "type": "hidden"
+            },
+            {
+              "name": "granularidad",
+              "type": "hidden"
+            },
+            {
+              "name": "gcd_isla",
+              "type": "hidden"
+            },
+            {
+              "name": "gcd_gcomarca",
+              "type": "hidden"
+            },
+            {
+              "name": "gcd_comarca",
+              "type": "hidden"
+            },
+            {
+              "name": "gcd_municipio",
+              "type": "hidden"
+            },
+            {
+              "name": "poblacion",
+              "title": "Población"
+            },
+            {
+              "name": "poblacion_edad_media",
+              "title": "Población. Edad media"
+            },
+            {
+              "name": "poblacion_hombres",
+              "title": "Población. Hombres"
+            },
+            {
+              "name": "poblacion_mujeres",
+              "title": "Población. Mujeres"
+            },
+            {
+              "name": "poblacion_indice_feminidad",
+              "title": "Población. Índice de feminidad"
+            },
+            {
+              "name": "poblacion_nacional",
+              "title": "Población de nacionalidad española"
+            },
+            {
+              "name": "poblacion_extranjera",
+              "title": "Población de nacionalidad extranjera"
+            },
+            {
+              "name": "poblacion_extranjera_pc",
+              "title": "Población de nacionalidad extranjera (%)"
+            },
+            {
+              "name": "poblacion_00a14",
+              "title": "Población de 0 a 14 años de edad"
+            },
+            {
+              "name": "poblacion_15a64",
+              "title": "Población de 15 a 64 años de edad"
+            },
+            {
+              "name": "poblacion_65mas",
+              "title": "Población de 65 o más años de edad"
+            },
+            {
+              "name": "poblacion_65a74",
+              "title": "Población de 65 a 74 años de edad"
+            },
+            {
+              "name": "poblacion_75a84",
+              "title": "Población de 75 a 84 años de edad"
+            },
+            {
+              "name": "poblacion_85mas",
+              "title": "Población de 85 o más años de edad"
+            },
+            {
+              "name": "poblacion_00a14_pc",
+              "title": "Población de 0 a 14 años de edad (%)"
+            },
+            {
+              "name": "poblacion_15a64_pc",
+              "title": "Población de 15 a 64 años de edad (%)"
+            },
+            {
+              "name": "poblacion_65mas_pc",
+              "title": "Población de 65 o más años de edad (%)"
+            },
+            {
+              "name": "poblacion_indice_dependencia",
+              "title": "Población. Índice de dependencia"
+            },
+            {
+              "name": "poblacion_indice_dependencia_mayores",
+              "title": "Población. Índice de dependencia mayores de 64 años"
+            },
+            {
+              "name": "poblacion_indice_dependencia_menores",
+              "title": "Población. Índice de dependencia menores de 15 años"
+            },
+            {
+              "name": "poblacion_indice_vejez",
+              "title": "Índice de Vejez"
+            },
+            {
+              "name": "poblacion_indice_juventud",
+              "title": "Índice de Juventud"
+            },
+            {
+              "name": "poblacion_indice_sobreenvejecimiento",
+              "title": "Índice de Sobreenvejecimiento"
+            },
+            {
+              "name": "poblacion_indice_ancianidad",
+              "title": "Índice de Ancianidad"
+            },
+            {
+              "name": "superficie",
+              "type": "hidden",
+              "title": "superficie"
+            },
+            {
+              "name": "poblacion_ds",
+              "title": "Densidad de Población"
+            },
+            {
+              "name": "poblacion_extranjera_ds",
+              "title": "Densidad de Población Extranjera"
+            },
+            {
+              "name": "poblacion_00a02",
+              "title": "Población de 0 a 2 años"
+            },
+            {
+              "name": "poblacion_03a05",
+              "title": "Población de 3 a 5 años"
+            },
+            {
+              "name": "poblacion_06a11",
+              "title": "Población de 6 a 11 años"
+            },
+            {
+              "name": "poblacion_12a15",
+              "title": "Población de 12 a 15 años"
+            },
+            {
+              "name": "poblacion_16a17",
+              "title": "Población de 16 a 17 años"
+            },
+            {
+              "name": "poblacion_00a17",
+              "title": "Población de 0 a 17 años"
+            },
+            {
+              "name": "poblacion_nacida_canarias",
+              "title": "Población. Nacidos en Canarias"
+            },
+            {
+              "name": "poblacion_nacida_es_xcanarias",
+              "title": "Población. Nacidos en el resto de España"
+            },
+            {
+              "name": "poblacion_nacida_extranjero",
+              "title": "Población. Nacidos en el extranjero"
+            },
+            {
+              "name": "poblacion_nacida_canarias_pc",
+              "title": "Población. Nacidos en Canarias (%)"
+            },
+            {
+              "name": "poblacion_nacida_es_xcanarias_pc",
+              "title": "Población. Nacidos en el resto de España (%)"
+            },
+            {
+              "name": "poblacion_nacida_extranjero_pc",
+              "title": "Población. Nacidos en el extranjero (%)"
+            }
+          ],
+          "activeStyle": "poblacion",
+          "defaultStyle": {
+            "time": {
+              "isSampled": true
+            },
+            "color": {
+              "numberOfBins": 7,
+              "binColors": [
+                "rgba(55, 106, 38, 1.0)",
+                "rgba(103, 162, 63, 1.0)",
+                "rgba(154, 196, 125, 1.0)",
+                "rgba(206, 214, 221, 1.0)",
+                "rgba(188, 153, 103, 1.0)",
+                "rgba(140, 92, 29, 1.0)",
+                "rgba(104, 68, 21, 1.0)"
+              ]
+            }
+          },
+          "featureInfoTemplate": {
+            "template": "<h1>{{terria.timeSeries.yName}}</h1><br>{{terria.timeSeries.chart}}"
+          },
+          "shareKeys": [
+            "Root Group/Ejemplos desarrollo/Indicadores demográficos. Municipios antes de 2007"
+          ]
+        }
+      ],
+      "description": "Ejemplos para desarrollo",
+      "isOpen": true,
+      "shareKeys": ["Root Group/Ejemplos desarrollo"]
+    }
+  ],
+  "homeCamera": {
+    "north": 30,
+    "east": -13,
+    "south": 27,
+    "west": -19
+  }
+}

@@ -16,9 +16,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!--MVN -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
-		<frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
-		<yarn.version>v1.22.10</yarn.version>
-		<node.version>v8.16.0</node.version>
+		<frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
+		<yarn.version>v1.22.22</yarn.version>
+		<node.version>v22.16.0</node.version>
 	</properties>
 
 	<build>
@@ -43,6 +43,11 @@
 						<goals>
 							<goal>yarn</goal>
 						</goals>
+						<configuration>
+							<!-- optional: The default argument is actually
+							"install", but let's be explicit -->
+							<arguments>install --child-concurrency 1 --network-concurrency 1</arguments>
+						</configuration>
 					</execution>
 					<execution>
 						<id>yarn run gulp</id>
@@ -50,7 +55,6 @@
 							<goal>yarn</goal>
 						</goals>
 						<configuration>
-							<executable>yarn</executable>
 							<arguments>run gulp release</arguments>
 						</configuration>
 					</execution>
@@ -90,27 +94,27 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:http://git.arte-consultores.com/istac/terria</connection>
-		<developerConnection>scm:git:http://git.arte-consultores.com/istac/terria</developerConnection>
-		<url>http://git.arte-consultores.com/istac/terria</url>
+		<connection>scm:git:https://git.arte-consultores.com/istac/terria</connection>
+		<developerConnection>scm:git:https://git.arte-consultores.com/istac/terria</developerConnection>
+		<url>https://git.arte-consultores.com/istac/terria</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>Jira</system>
-		<url>http://jira.arte-consultores.com/browse/TERRIA</url>
+		<url>https://jira.arte.dev/browse/EDATOS</url>
 	</issueManagement>
 
 	<distributionManagement>
 		<repository>
 			<id>arte.releases.http</id>
 			<name>Arte Repository - RELEASE</name>
-			<url>http://repository.arte-consultores.com/content/repositories/releases</url>
+			<url>https://repository.arte-consultores.com/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>arte.snapshot.http</id>
 			<name>Arte Repository - SNAPSHOT</name>
-			<url>http://repository.arte-consultores.com/content/repositories/snapshots</url>
+			<url>https://repository.arte-consultores.com/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
