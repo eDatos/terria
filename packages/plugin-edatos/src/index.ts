@@ -13,11 +13,16 @@ const plugin: TerriaPlugin = {
   version: "0.0.1",
   register({ viewState }: TerriaPluginContext) {
 
+    if (window.self !== window.top) {
+      console.debug("Not loading header because we are in an iframe");
+      return;
+    }
+
     fetch('application.json')
       .then(res => res.json())
       .then(application => {
           var applicationConfig = application;
-          
+
           function getMetadataValue(metadataValueKey: string) {
               var metadataEndpoint = applicationConfig.metadata.endpoint;
               return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
@@ -30,14 +35,14 @@ const plugin: TerriaPlugin = {
                   .then(value => fetch(`${value}?appName=${viewState.terria.appName}&appId=terria`))
                   .then(res => res.text())
                   .then(html => {
-                    
+
                     // See lib\Views\render.jsx
                     const observer = new MutationObserver(mutations => {
                       const ui = document.getElementById("ui");
                       if (ui) {
                         observer.disconnect();
                         const header = generateElements(html, 'istac-navbar-container');
-                        ui.prepend(header); 
+                        ui.prepend(header);
                       }
                     });
                     observer.observe(document.body, {
@@ -49,7 +54,7 @@ const plugin: TerriaPlugin = {
                  .then(value => fetch(`${value}`))
                  .then(res => res.text())
                  .then(html => {
-                   
+
                    // See lib\Views\render.jsx
                    const observer = new MutationObserver(mutations => {
                     const ui = document.getElementById("ui");
