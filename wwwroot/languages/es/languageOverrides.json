@@ -173,7 +173,7 @@
     "permissionDenied": "Permiso denegado para obtener tu localización. Por favor, revisa la configuración de tu navegador."
   },
   "sui": {
-    "showWorkbench": "Mostrar banco de datos",
+    "showWorkbench": "Banco de datos",
     "hideWorkbench": "Ocultar banco de datos"
   }
 }
