@@ -22,6 +22,12 @@
     [class*="WorkflowPanelPortal__Container"] {
       bottom: 0;
     }
+    [class*="SearchBox___StyledForm"] {
+    	margin-top: 30px;
+    }
+    [class*="SidePanelContainer"] [class*="Branding___StyledDiv"] {
+      padding: 0;
+    }
     [class*="SidePanel___StyledDiv"] [class*="Button__StyledButton"] {
       background: variables.$dark;
       &:hover {
@@ -45,8 +51,30 @@
       }
     }
 
+    .tjs-full_screen_button__fullScreenWrapper {
+      max-width: 250px;
+    }
+    
+    .tjs-full_screen_button__minifiedFullscreenBtnWrapper {
+      [class*="Button__StyledButton"] {
+        background: variables.$dark;
+        &:hover {
+          background: variables.$color-primary;
+        }
+      }
+    }
+
     .tjs-standard-user-interface__showWorkbenchButton {
       top: 60px;
+      [class*="Branding___StyledDiv"] {
+        padding: 0;
+      }
+      [class*="Button__StyledButton"] {
+        background: variables.$dark;
+        &:hover {
+          background: variables.$color-primary;
+        } 
+      }
     }
     .tjs-add-data__url-input {
       display: flex;
