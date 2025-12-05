@@ -171,5 +171,9 @@
   },
   "location": {
     "permissionDenied": "Permiso denegado para obtener tu localización. Por favor, revisa la configuración de tu navegador."
+  },
+  "sui": {
+    "showWorkbench": "Banco de datos",
+    "hideWorkbench": "Ocultar banco de datos"
   }
 }
