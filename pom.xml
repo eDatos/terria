@@ -3,7 +3,7 @@
 	<groupId>es.gobcan.istac.terria</groupId>
 	<artifactId>terria</artifactId>
 	<packaging>jar</packaging>
-	<version>3.0.1-SNAPSHOT</version>
+	<version>3.0.2-SNAPSHOT</version>
 	<name>TERRIA</name>
 	<description>Atlas Estadístico de Canarias</description>
 
