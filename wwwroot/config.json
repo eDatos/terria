@@ -33,7 +33,7 @@
         "es": "Español"
       },
       "fallbackLanguage": "en",
-      "changeLanguageOnStartWhen": ["cookie"],
+      "changeLanguageOnStartWhen": ["querystring", "cookie"],
       "lookupCookie": "chosenLocale"
     },
     "useCesiumIonBingImagery": true,
