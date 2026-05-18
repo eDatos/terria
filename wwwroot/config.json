@@ -30,7 +30,8 @@
       "debug": true,
       "languages": {
         "en": "English",
-        "es": "Español"
+        "es": "Español",
+        "ca": "Català"
       },
       "fallbackLanguage": "en",
       "changeLanguageOnStartWhen": ["querystring", "cookie"],
