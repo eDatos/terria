@@ -1,26 +1,9 @@
+import i18next from "i18next";
 import URI from "urijs";
 import WebMapServiceCatalogItem from "terriajs/lib/Models/Catalog/Ows/WebMapServiceCatalogItem";
 
-/**
- * Returns the active UI language, reading from the same sources that TerriaJS
- * uses for language detection (in priority order):
- *  1. Cookie "chosenLocale"  (set by the eDatos navbar on language switch)
- *  2. localStorage "i18nextLng"  (written by i18next after detection)
- *  3. Browser language  (navigator.language stripped to base code)
- *
- * We deliberately do NOT import i18next because terriajs bundles its own
- * nested copy (node_modules/terriajs/node_modules/i18next) that is distinct
- * from the root node_modules copy — reading the instance from the root would
- * always return undefined.
- */
 function getActiveLanguage(): string {
-  const cookieMatch = document.cookie.match(/(?:^|;\s*)chosenLocale=([^;]+)/);
-  if (cookieMatch?.[1]) return cookieMatch[1];
-
-  const stored = localStorage.getItem("i18nextLng");
-  if (stored) return stored;
-
-  return navigator.language.split("-")[0] || "en";
+  return i18next.language;
 }
 
 /**
