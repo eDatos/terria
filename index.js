@@ -8,6 +8,7 @@ import ViewState from "terriajs/lib/ReactViewModels/ViewState";
 import registerCustomComponentTypes from "terriajs/lib/ReactViews/Custom/registerCustomComponentTypes";
 import updateApplicationOnHashChange from "terriajs/lib/ViewModels/updateApplicationOnHashChange";
 import updateApplicationOnMessageFromParentWindow from "terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow";
+import i18next from "i18next";
 import loadPlugins from "./lib/Core/loadPlugins";
 import showGlobalDisclaimer from "./lib/Views/showGlobalDisclaimer";
 import plugins from "./plugins";
@@ -68,12 +69,14 @@ export default terria
     terria.raiseErrorToUser(e);
   })
   .finally(function () {
-    // Override the default document title with appName. Check first for default
-    // title, because user might have already customized the title in
-    // index.ejs
-    if (document.title === "Terria Map") {
-      document.title = terria.appName;
-    }
+    // Update index metadata (title and description) based on the current language
+    const updateDocumentMetadata = () => {
+      document.title = i18next.t("title") || terria.appName;
+      document.querySelector('meta[name="description"]').setAttribute("content", i18next.t("metaDescription"));
+    };
+
+    updateDocumentMetadata();
+    i18next.on("languageChanged", updateDocumentMetadata);
 
     // Load init sources like init files and share links
     terria.loadInitSources().then((result) => result.raiseError(terria));

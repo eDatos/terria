@@ -1,4 +1,6 @@
 {
+  "title": "Atlas estadístic",
+  "metaDescription": "Visualitzi mapes en atles estadístics tematitzats i contextualitzats amb informació geogràfica.",
   "gettingstarted": {
     "title": "Començant amb el mapa",
     "markdownText": "## Començant amb el mapa\n\nSi ets nou en l'ús del mapa o de dades espacials, el nostre vídeo d'Introducció cobreix ràpidament la funcionalitat bàsica que necessitaràs per afegir i interrogar conjunts de dades.\n\nSi no tens temps per veure el vídeo, et suggerirem explorar les àrees següents:\n\n1. Cerca una ubicació per trobar ràpidament una àrea d'interès\n2. Utilitza 'Explora les dades del mapa' per veure el catàleg de conjunts de dades disponibles i afegir-los al mapa\n3. Interactua amb la capa de dades, incloent-hi l'opacitat i l'activació/desactivació al panell de treball de l'esquerra\n4. Fes clic a les dades del mapa per veure dades més detallades, incloses les dades en brut\n5. Canvia el mapa base usant les opcions de 'Configuració del mapa' per ajudar a fer alguns conjunts de dades més visibles\n6. Apropa't i canvia la vista, incloent-hi la inclinació de l'angle de visió usant els controls del costat dret de la pantalla",

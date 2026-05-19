@@ -1,4 +1,6 @@
 {
+  "title": "Atlas Estadístico",
+  "metaDescription": "Visualice mapas en atlas estadísticos tematizados y contextualizados con información geográfica.",
   "gettingstarted": {
     "title": "Empezando con el mapa",
     "markdownText": "## Empezando con el mapa\n\nSi eres nuevo en el uso del mapa o de datos espaciales, nuestro video de Introducción cubre rápidamente la funcionalidad básica que necesitarás para agregar e interrogar conjuntos de datos.\n\nSi no tienes tiempo para ver el video, te sugerimos explorar las siguientes áreas:\n\n1. Busca una ubicación para encontrar rápidamente un área de interés\n2. Usa 'Explorar datos del mapa' para ver el catálogo de conjuntos de datos disponibles y agregarlos al mapa\n3. Interactúa con la capa de datos, incluyendo la opacidad y alternando entre activar y desactivar en el banco de trabajo a la izquierda\n4. Haz clic en los datos en el mapa para ver datos más detallados, incluyendo los datos sin procesar\n5. Cambia tu mapa base usando las opciones en 'Configuración del mapa' para ayudar a hacer algunos conjuntos de datos más visibles\n6. Acércate y cambia tu vista, incluyendo inclinar el ángulo de visión usando los controles en el lado derecho de la pantalla",
