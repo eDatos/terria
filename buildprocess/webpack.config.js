@@ -140,9 +140,6 @@ module.exports = function (devMode) {
   config.resolve.alias["terriajs-variables"] = require.resolve(
     "../lib/Styles/variables-overrides.scss"
   );
-  // Force all i18next imports to the same instance that terriajs initializes,
-  // so plugins can call i18next.language without getting an uninitialized copy.
-  config.resolve.alias["i18next"] = require.resolve("i18next");
 
   return configureWebpackForPlugins(
     configureWebpackForTerriaJS({

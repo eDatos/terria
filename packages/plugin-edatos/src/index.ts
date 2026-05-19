@@ -3,10 +3,6 @@ import {
   TerriaPlugin,
   TerriaPluginContext
 } from "terriajs-plugin-api";
-import { applyWmsI18nPatches } from "./WmsI18nPatch";
-
-applyWmsI18nPatches();
-
 const plugin: TerriaPlugin = {
   name: "Edatos plugin",
   description:
