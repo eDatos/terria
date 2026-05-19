@@ -9,6 +9,7 @@ import registerCustomComponentTypes from "terriajs/lib/ReactViews/Custom/registe
 import updateApplicationOnHashChange from "terriajs/lib/ViewModels/updateApplicationOnHashChange";
 import updateApplicationOnMessageFromParentWindow from "terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow";
 import i18next from "i18next";
+import { applyEnvironmentLanguageOverrides } from "./lib/i18n/environmentLanguageOverride";
 import loadPlugins from "./lib/Core/loadPlugins";
 import showGlobalDisclaimer from "./lib/Views/showGlobalDisclaimer";
 import plugins from "./plugins";
@@ -56,7 +57,8 @@ export default terria
     shareDataService: new ShareDataService({
       terria: terria
     }),
-    beforeRestoreAppState: () => {
+    beforeRestoreAppState: async () => {
+      await applyEnvironmentLanguageOverrides();
       // Load plugins before restoring app state because app state may
       // reference plugin components and catalog items.
       return loadPlugins(viewState, plugins).catch((error) => {
