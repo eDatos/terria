@@ -171,6 +171,11 @@
       "notificationFeedbackEmail": "Para preguntas y comentarios, por favor contáctenos en {{email}}"
     }
   },
+  "core": {
+    "terriaError": {
+      "networkRequestMessage": "Es posible que los datos no estén disponibles o no se muestren correctamente debido a la interrupción del servicio del custodio de datos. Intente volver a cargar el mapa, acceder a los datos en una etapa posterior o seleccionar un conjunto de datos diferente. <feedbacklink feedback-message='Si el problema persiste, envíe sus comentarios aquí.' email-message='Si el problema persiste, informe a'/>"
+    }
+  },
   "location": {
     "permissionDenied": "Permiso denegado para obtener tu localización. Por favor, revisa la configuración de tu navegador."
   },

@@ -181,6 +181,11 @@
       "notificationFeedbackEmail": "Per a preguntes i comentaris, si us plau poseu-vos en contacte amb {{email}}"
     }
   },
+  "core": {
+    "terriaError": {
+      "networkRequestMessage": "És possible que les dades no estiguin disponibles o no es mostrin correctament a causa de l'interrupció del servei del custodi de dades. Si us plau proveu de tornar a carregar el mapa, accediu a les dades en una fase posterior o seleccioneu un conjunt de dades diferent. <feedbacklink feedback-message='Si el problema persisteix, envieu comentaris aquí.' email-message='Si el problema persisteix, si us plau, informeu-ne a'/>"
+    }
+  },
   "location": {
     "permissionDenied": "Permís denegat per obtenir la teva ubicació. Si us plau, revisa la configuració del teu navegador.",
     "positionUnavailable": "La teva informació d'ubicació no està disponible.",

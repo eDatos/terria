@@ -120,5 +120,10 @@
   },
   "pelias": {
     "searchLocations": "Statistical georeferencing API locations"
+  },
+  "core": {
+    "terriaError": {
+      "networkRequestMessage": "Data may not be available or display correctly due to data custodian's service outage. Please try reloading the map, accessing the data at a later stage, or selecting a different dataset. <feedbacklink feedback-message='If the problem persists, please submit feedback here.' email-message='If the problem persists, please report to'/>"
+    }
   }
 }
