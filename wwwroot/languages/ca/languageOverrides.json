@@ -301,5 +301,9 @@
   "sui": {
     "showWorkbench": "Banc de dades",
     "hideWorkbench": "Amagar banc de dades"
+  },
+  "storymigration": {
+    "title": "Migració de Compartir i Història",
+    "markdownText": "## Migració de Compartir i Història\n\n### Guia per actualitzar enllaços de compartir, incloent-hi històries\n\nSi has rebut un avís que t'indica que un enllaç de compartir es basava en una versió anterior de TerriaJS, voldràs fer algunes coses per recrear-los en l'última versió de l'aplicació!\n\n#### Creadors\n\n1. Identifica la URL que genera una notificació de 'esforç de preservació' en carregar-la a Terria. Per exemple, pot ser que sàpigues on s'estan usant, o trobar-les navegant.\n2. Obre-la a la nova aplicació de mapes basada en la versió més recent (v8).\n3. Verifica que tot es comparteix com esperes, ajusta les capes si falten o no es comporten correctament.\n4. Actualitza l'enllaç de compartir fent clic al botó Compartir/Imprimir i copia el nou enllaç.\n5. Si saps on s'usa la URL, actualitza-la a la teva pàgina web, o envia el nou enllaç als usuaris.\n\n#### Consumidors\n1. Carrega la URL de compartir.\n2. Si no es veu del tot bé, notifica-ho al proveïdor perquè pugui seguir els passos anteriors i recrear-la en l'última versió de Terria."
   }
 }

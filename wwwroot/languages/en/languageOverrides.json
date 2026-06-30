@@ -125,5 +125,9 @@
     "terriaError": {
       "networkRequestMessage": "Data may not be available or display correctly due to data custodian's service outage. Please try reloading the map, accessing the data at a later stage, or selecting a different dataset. <feedbacklink feedback-message='If the problem persists, please submit feedback here.' email-message='If the problem persists, please report to'/>"
     }
+  },
+  "storymigration": {
+    "title": "Share and Story Migration",
+    "markdownText": "## Share and Story Migration\n\n### Guide to updating share links, including stories\n\nIf you've received a warning telling you that a share link was based on an older version of TerriaJS, you'll want to do a few things to recreate them in the latest version of the application!\n\n#### Creators\n\n1. Identify the URL that triggers a 'preservation effort' notification when loaded in Terria. For example, you may know where they are being used, or find them by browsing.\n2. Open it in the new map application based on the most recent version (v8).\n3. Check that everything is shared as you expect, adjust the layers if they are missing or not behaving correctly.\n4. Update the share link by clicking the Share/Print button and copy the new link.\n5. If you know where the URL is used, update it on your website, or send the new link to users.\n\n#### Consumers\n1. Load the share URL.\n2. If it doesn't look quite right, notify the provider so they can follow the steps above and recreate it in the latest version of Terria."
   }
 }
