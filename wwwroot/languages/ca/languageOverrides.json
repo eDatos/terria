@@ -1,0 +1,309 @@
+{
+  "title": "Atlas estadístic",
+  "metaDescription": "Visualitzi mapes en atles estadístics tematitzats i contextualitzats amb informació geogràfica.",
+  "gettingstarted": {
+    "title": "Començant amb el mapa",
+    "markdownText": "## Començant amb el mapa\n\nSi ets nou en l'ús del mapa o de dades espacials, el nostre vídeo d'Introducció cobreix ràpidament la funcionalitat bàsica que necessitaràs per afegir i interrogar conjunts de dades.\n\nSi no tens temps per veure el vídeo, et suggerirem explorar les àrees següents:\n\n1. Cerca una ubicació per trobar ràpidament una àrea d'interès\n2. Utilitza 'Explora les dades del mapa' per veure el catàleg de conjunts de dades disponibles i afegir-los al mapa\n3. Interactua amb la capa de dades, incloent-hi l'opacitat i l'activació/desactivació al panell de treball de l'esquerra\n4. Fes clic a les dades del mapa per veure dades més detallades, incloses les dades en brut\n5. Canvia el mapa base usant les opcions de 'Configuració del mapa' per ajudar a fer alguns conjunts de dades més visibles\n6. Apropa't i canvia la vista, incloent-hi la inclinació de l'angle de visió usant els controls del costat dret de la pantalla",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/FjSxaviSLhc",
+    "placeholderImage": "https://img.youtube.com/vi/FjSxaviSLhc/maxresdefault.jpg"
+  },
+  "stepbystepguide": {
+    "title": "Guia pas a pas",
+    "markdownText": "## Guia pas a pas\n\nInicia una guia pas a pas per a diversos fluxos de treball populars a continuació:",
+    "gettingstarted": {
+      "title": "Començant amb el mapa",
+      "step1": {
+        "markdownDescription": "La cerca es troba a la part superior del panell de treball de l'esquerra.",
+        "title": "Cerca una ubicació per trobar una àrea d'interès"
+      },
+      "step2": {
+        "markdownDescription": "Pots veure el catàleg en qualsevol moment",
+        "title": "Utilitza 'Explora les dades del mapa' per veure el catàleg de dades"
+      },
+      "step3": {
+        "markdownDescription": "Troba un conjunt de dades d'interès",
+        "title": "Cerca dades o navega pel catàleg"
+      },
+      "step4": {
+        "title": "Afegeix dades al mapa fent clic al signe + o al botó 'Afegir al mapa' a la finestra de previsualització",
+        "markdownDescription": ""
+      },
+      "step5": {
+        "title": "Interactua amb les dades, inclosa l'opacitat i l'activació/desactivació al panell de treball de l'esquerra"
+      },
+      "step6": {
+        "title": "Fes clic a les dades del mapa per veure més detalls activant el panell d'Informació de Característiques"
+      },
+      "step7": {
+        "title": "Canvia el mapa base usant les opcions de 'Configuració del mapa' per millorar el contrast"
+      },
+      "step8": {
+        "title": "Apropa't i canvia la vista usant els controls del costat dret de la pantalla"
+      }
+    },
+    "satelliteimagery": {
+      "title": "Afegir imatges de satèl·lit",
+      "footnote": "Important: Les imatges de satèl·lit poden trigar una mica a carregar-se, així que sigues pacient. Si les imatges no semblen carregar-se, allunya una mica la vista",
+      "step1": {
+        "title": "Troba la ubicació per veure imatges de satèl·lit",
+        "markdownDescription": "- Utilitza la cerca d'ubicació o apropa't i desplaça't pel mapa usant el ratolí o els controls de zoom"
+      },
+      "step2": {
+        "title": "Afegeix les imatges de satèl·lit al mapa",
+        "markdownDescription": "- Obre el catàleg de dades usant el botó 'Explora les dades del mapa'\n- Navega pels conjunts de dades per seleccionar la teva opció de satèl·lit: Landsat o Sentinel, i imatges diàries o compostes. Això pot dependre de la resolució de la imatge que necessites (10m o 25m) i si vols imatges diàries, compostes de 16 dies o mitjanes anuals\n - Selecciona 'Afegir al mapa' per veure les imatges de satèl·lit"
+      },
+      "step3": {
+        "title": "Filtra imatges per trobar imatges de satèl·lit",
+        "markdownDescription": "- Filtra imatges per ubicació per trobar ràpidament imatges de satèl·lit per a aquesta ubicació\n - Els satèl·lits volten el globus moltes vegades al dia. Pots esperar que les imatges de satèl·lit estiguin disponibles per a una ubicació cada dues setmanes\n - Si no has seleccionat el teu punt d'interès al mapa, apropa't per seleccionar-ne un. Veuràs el filtre aplicat en blau al Panell de Treball de l'esquerra"
+      },
+      "step4": {
+        "title": "Selecciona una data i hora",
+        "markdownDescription": "- Utilitza el selector de dates per seleccionar una data i hora. Desplaça't cap enrere per anys anteriors usant la fletxa cap enrere\n - Tria una altra data si la teva imatge està coberta de núvols. Pots desplaçar-te ràpidament cap enrere i cap endavant usant les fletxes al costat del selector de dates"
+      }
+    },
+    "comparetimeseries": {
+      "title": "Veure i comparar diferents moments en el temps",
+      "footnote": "Important: Qualsevol dada de sèrie temporal es pot comparar usant el Mode de Pantalla Dividida, no només imatges de satèl·lit",
+      "step1": {
+        "title": "Afegeix un conjunt de dades de sèrie temporal al mapa",
+        "markdownDescription": "- Les imatges de satèl·lit són un bon exemple de dades de sèrie temporal, amb molts satèl·lits que es remunten a dècades enrere\n- Troba la teva ubicació d'interès i filtra les imatges disponibles per aquesta ubicació\n- Consulta la nostra guia d'Afegir Imatges de Satèl·lit al Mapa per obtenir més informació"
+      },
+      "step2": {
+        "title": "Selecciona la data i hora",
+        "markdownDescription": "- Al panell de treball de l'esquerra, selecciona la data i hora, cosa que obrirà el selector de dates\n- Selecciona un any, mes i data, o navega cap enrere a altres anys i fins i tot segles usant la fletxa cap enrere\n- Les dates disponibles apareixen en blau"
+      },
+      "step3": {
+        "title": "Compara diferents dates en una ubicació",
+        "markdownDescription": "- Des del menú desplegable de 3 punts al panell de treball, prem 'Comparar' per activar el Mode de Pantalla Dividida\n- Una còpia duplicada del teu conjunt de dades apareixerà al panell de treball\n- Tria les dates que vols comparar al costat esquerre i dret de la pantalla\n- Arrossega el control lliscant usant el botó blanc per lliscar i comparar les dues dates de les imatges"
+      },
+      "step4": {
+        "title": "Tanca el mode de pantalla dividida",
+        "markdownDescription": "- Surt del mode de pantalla dividida prement la 'x' del títol del Mode de Pantalla Dividida al panell de treball\n- Elimina la còpia duplicada del teu conjunt de dades al panell de treball usant el menú desplegable de 3 punts"
+      }
+    }
+  },
+  "helpContentTerm1": {
+    "term": "conjunt de dades",
+    "aliases": ["data set", "data sets", "datasets"],
+    "content": "Una col·lecció d'informació relacionada, organitzada com una usant una estructura de dades comuna, per exemple, \"preus mitjans de cases a Sydney per al 2019\" o \"temperatura mínima i màxima diària\""
+  },
+  "helpContentTerm2": {
+    "term": "sèrie temporal",
+    "aliases": ["timeseries"],
+    "content": "Una seqüència de dades recollides en diferents moments en el temps, per exemple, dades de sensors de temperatura o una galeria d'imatges del mateix lloc"
+  },
+  "helpContentTerm3": {
+    "term": "panell de treball",
+    "content": "El panell al costat esquerre de la pantalla que mostra els conjunts de dades que has afegit al mapa"
+  },
+  "helpContentTerm4": {
+    "term": "4D",
+    "content": "Dades 3D que també tenen un component de sèrie temporal"
+  },
+  "helpContentTerm5": {
+    "term": "catàleg",
+    "aliases": ["catalogue"],
+    "content": "L'inventari de tots els conjunts de dades disponibles per afegir al mapa"
+  },
+  "helpContentTerm6": {
+    "term": "mapes base",
+    "aliases": ["basemap", "base map", "basemaps"],
+    "content": "Diferents opcions de mapes base en blanc, com imatges de Bing, carreteres, mapes foscos o clars"
+  },
+  "helpContentTerm7": {
+    "term": "conjunt de dades font",
+    "content": "El conjunt de dades que has afegit al teu panell de treball que permet càlculs de diferència"
+  },
+  "helpContentTerm8": {
+    "term": "estil de previsualització",
+    "content": "La manera com apareix el conjunt de dades a la finestra de previsualització. Recomanem color veritable per buscar imatges sense núvols"
+  },
+  "viewModels": {
+    "searchMinCharacters": "Cal introduir almenys {{count}} caràcter",
+    "searchMinCharacters_plural": "Cal introduir almenys {{count}} caràcters"
+  },
+  "story": {
+    "removeAllStoriesDialog": "Estàs segur que vols eliminar {{ count }} escena?",
+    "removeAllStoriesDialog_plural": "Estàs segur que vols eliminar les {{ count }} escenes?",
+    "panelBodyCapped": "Cada escena està limitada a {{ shareMaxRequestSize }}. Divideix les dades grans o moltes escenes en múltiples històries.",
+    "storiesTooLong": "Aquesta història supera la mida màxima permesa. Intenta reduir el nombre de conjunts de dades visibles o captura menys escenes.",
+    "editor": {
+      "modalHeader": "Editor d'històries - Captura d'escena",
+      "titleLabel": "Títol (obligatori)",
+      "descriptionLabel": "Descripció"
+    }
+  },
+  "workbench": {
+    "disableAll": "Desactivar Tots",
+    "enableAll": "Activar Tots"
+  },
+  "emptyWorkbenchInfo": [
+    {
+      "heading": "Afegeix un conjunt de dades aquí",
+      "body": "Quan afegeixis un conjunt de dades, la seva llegenda i configuracions apareixeran aquí."
+    },
+    {
+      "heading": "Comença",
+      "list": [
+        "Fes clic a Explora les dades del mapa per veure els conjunts de dades disponibles",
+        "Carrega els teus propis conjunts de dades mitjançant el botó Pujar",
+        "Troba les teves dades afegides en aquest panell"
+      ]
+    },
+    {
+      "heading": "El que pots fer",
+      "list": [
+        "Mostrar o amagar dades",
+        "Ajustar la transparència (opacitat)",
+        "Comparar costat a costat",
+        "Canviar estils (colors, línies, símbols)",
+        "Veure diferents dates i hores (si les dades ho suporten)"
+      ]
+    },
+    {
+      "body": "Utilitza aquest panell per explorar dades, gestionar configuracions i construir la teva escena o història al mapa."
+    }
+  ],
+  "addData": {
+    "addDataBtnText": "Explorar dades",
+    "data": "Dades",
+    "modalTitle": "Explorar dades",
+    "localFileType": "<0>Pas 1:</0> Seleccionar tipus de fitxer",
+    "localFile": "<0>Pas 2:</0> Seleccionar fitxer",
+    "webFileType": "<0>Pas 1:</0> Seleccioneu el tipus de fitxer o servei web",
+    "webFile": "<0>Pas 2:</0> Introduïu la URL del fitxer de dades o del servei web"
+  },
+  "pelias": {
+    "searchLocations": "Localitzacions de l'API de georeferenciació estadística"
+  },
+  "models": {
+    "raiseError": {
+      "notificationFeedbackEmail": "Per a preguntes i comentaris, si us plau poseu-vos en contacte amb {{email}}"
+    }
+  },
+  "core": {
+    "terriaError": {
+      "networkRequestMessage": "És possible que les dades no estiguin disponibles o no es mostrin correctament a causa de l'interrupció del servei del custodi de dades. Si us plau proveu de tornar a carregar el mapa, accediu a les dades en una fase posterior o seleccioneu un conjunt de dades diferent. <feedbacklink feedback-message='Si el problema persisteix, envieu comentaris aquí.' email-message='Si el problema persisteix, si us plau, informeu-ne a'/>"
+    }
+  },
+  "location": {
+    "permissionDenied": "Permís denegat per obtenir la teva ubicació. Si us plau, revisa la configuració del teu navegador.",
+    "positionUnavailable": "La teva informació d'ubicació no està disponible.",
+    "timeout": "L'obtenció de la teva informació d'ubicació ha trigat massa. Si us plau, torna-ho a provar més tard."
+  },
+  "dragDrop": {
+    "notification": "<0>\"{{fileNames}}\"</0> s'ha afegit a <4>Les meves dades</4>.",
+    "notification_plural": "<0>\"{{fileNames}}\"</0> s'han afegit a <4>Les meves dades</4>."
+  },
+  "core": {
+    "dataType": {
+      "cog": "GeoTiff optimitzat al núvol",
+      "cesium-ion": "Cesium ion"
+    }
+  },
+  "map": {
+    "cesium": {
+      "terrainServerErrorTitle": "El servidor de terreny no respon"
+    },
+    "extraCreditLinks": {
+      "termsOfUse": "Termes d'ús",
+      "credits": "Crèdits",
+      "mapCredits": "Crèdits del mapa",
+      "dataProvider": "Dades proporcionades per:",
+      "searchProvider": "Cerca proporcionada per:"
+    }
+  },
+  "searchProvider": {
+    "noSearchProviders": "No hi ha proveïdors de cerca configurats"
+  },
+  "term": {
+    "missingContent": "contingut que falta"
+  },
+  "mapNavigation": {
+    "additionalToolsTitle": "Obrir eines addicionals"
+  },
+  "itemSearchTool": {
+    "toolLoadError": "Error en carregar l'eina de cerca.",
+    "title": "Cercar {{itemName}}",
+    "loading": "Carregant paràmetres de cerca",
+    "loadError": "Error en carregar els paràmetres de cerca. Consulta la consola per veure errors detallats.",
+    "noParameters": "No s'han trobat paràmetres de cerca",
+    "searching": "Cercant",
+    "searchError": "La cerca ha fallat. Consulta la consola per veure errors detallats.",
+    "numericParameter": {
+      "minimum": "Mínim",
+      "maximum": "Màxim"
+    },
+    "searchBtnText": "Cercar",
+    "resetBtnText": "Netejar",
+    "backBtnText": "Cercar de nou",
+    "resultsCount": "{{count}} resultat trobat",
+    "resultsCount_plural": "{{count}} resultats trobats",
+    "actions": {
+      "highlightAll": "Ressaltar tots",
+      "showMatchingOnly": "Mostrar només coincidències"
+    }
+  },
+  "notification": {
+    "title": "Missatge"
+  },
+  "toast": {
+    "mapIsZooming": "Carregant zoom òptim..."
+  },
+  "printView": {
+    "loading": "Creant vista d'impressió..."
+  },
+  "compare": {
+    "title": "Comparar",
+    "leftPanel": "Panell esquerre",
+    "rightPanel": "Panell dret",
+    "entireMap": {
+      "title": "Mapa complet",
+      "emptyText": "Afegeix noves dades per mostrar a tot el mapa mitjançant el menú de punts de dalt."
+    },
+    "entireMapMenu": {
+      "browse": "Explorar dades del mapa",
+      "sendAllToFront": "Enviar tot al davant",
+      "sendAllToBack": "Enviar tot al darrere",
+      "hideAll": "Amagar tot"
+    },
+    "info": "Compara conjunts de dades espacials del teu panell de treball costat a costat al mapa.",
+    "dataset": {
+      "label": "Conjunt de dades",
+      "selectOne": "Selecciona'n un"
+    },
+    "dimensionSelector": {
+      "undefinedLabel": "No especificat"
+    },
+    "dateButton": {
+      "left": "Esquerra",
+      "right": "Dreta",
+      "select": "Seleccionar data"
+    },
+    "dateLocationFilter": {
+      "filter": "Filtrar data per ubicació",
+      "loading": "Carregant filtre...",
+      "cancel": "Cancel·lar",
+      "location": "Mostrant imatges disponibles per a {{latitude}}, {{longitude}}",
+      "mouseTooltipTitle": "Seleccionar ubicació",
+      "mouseTooltipMessage": "Clic dret per cancel·lar"
+    }
+  },
+  "selectableDimensions": {
+    "invalid": "No vàlid"
+  },
+  "diffTool": {
+    "close": "Tancar",
+    "labels": {
+      "saveToWorkbench": "Desar al panell de treball"
+    }
+  },
+  "sui": {
+    "showWorkbench": "Banc de dades",
+    "hideWorkbench": "Amagar banc de dades"
+  },
+  "storymigration": {
+    "title": "Migració de Compartir i Història",
+    "markdownText": "## Migració de Compartir i Història\n\n### Guia per actualitzar enllaços de compartir, incloent-hi històries\n\nSi has rebut un avís que t'indica que un enllaç de compartir es basava en una versió anterior de TerriaJS, voldràs fer algunes coses per recrear-los en l'última versió de l'aplicació!\n\n#### Creadors\n\n1. Identifica la URL que genera una notificació de 'esforç de preservació' en carregar-la a Terria. Per exemple, pot ser que sàpigues on s'estan usant, o trobar-les navegant.\n2. Obre-la a la nova aplicació de mapes basada en la versió més recent (v8).\n3. Verifica que tot es comparteix com esperes, ajusta les capes si falten o no es comporten correctament.\n4. Actualitza l'enllaç de compartir fent clic al botó Compartir/Imprimir i copia el nou enllaç.\n5. Si saps on s'usa la URL, actualitza-la a la teva pàgina web, o envia el nou enllaç als usuaris.\n\n#### Consumidors\n1. Carrega la URL de compartir.\n2. Si no es veu del tot bé, notifica-ho al proveïdor perquè pugui seguir els passos anteriors i recrear-la en l'última versió de Terria."
+  }
+}

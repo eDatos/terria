@@ -3,9 +3,6 @@ import {
   TerriaPlugin,
   TerriaPluginContext
 } from "terriajs-plugin-api";
-// import { default  } from "./Views/DropdownLanguage";
-// const DropdownLanguage = require("./Views/DropdownLanguage").default;
-
 const plugin: TerriaPlugin = {
   name: "Edatos plugin",
   description:
